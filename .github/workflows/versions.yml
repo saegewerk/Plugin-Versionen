@@ -1,0 +1,41 @@
+name: Versions-Datenbank
+# Crawlt jede Nacht die Hersteller-Seiten und aktualisiert versions.json.
+# Gemeldete Versionen: Issues mit Label "version-meldung"; nach Prüfung Label "bestätigt" setzen,
+# dann übernimmt der nächste Lauf sie und schließt das Issue.
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm test
+      - name: Labels anlegen
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: |
+          gh label create version-meldung --color 7c5cff --description "Neue Version aus Plugin Organizer gemeldet" --force
+          gh label create "bestätigt" --color 2ea043 --description "Geprüft, wird beim nächsten Lauf übernommen" --force
+      - name: Bestätigte Meldungen holen
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: gh issue list --label "bestätigt" --label "version-meldung" --state open --json number,body --limit 200 > /tmp/reports.json
+      - run: node tools/crawl-versions.js sources.json versions.json /tmp/reports.json
+      - name: Änderungen speichern
+        run: |
+          if git diff --quiet; then echo "Keine neuen Versionen."; exit 0; fi
+          git config user.name "versions-bot"
+          git config user.email "versions-bot@users.noreply.github.com"
+          git commit -am "Versions-Datenbank aktualisiert"
+          git push
+      - name: Übernommene Meldungen schließen
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: |
+          for n in $(node -e "console.log((require('fs').existsSync('/tmp/applied.json')?require('/tmp/applied.json'):[]).join(' '))"); do
+            gh issue close "$n" --comment "Danke! Die Version ist jetzt in der Datenbank."
+          done

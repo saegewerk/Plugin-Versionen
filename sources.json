@@ -1,0 +1,722 @@
+[
+  {
+    "vendor": "FabFilter",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/pro-q-4-by-fabfilter",
+    "products": [
+      {
+        "name": "Pro-Q 4",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "FabFilter",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/pro-c-3-by-fabfilter",
+    "products": [
+      {
+        "name": "Pro-C 3",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "FabFilter",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/pro-l-2-by-fabfilter",
+    "products": [
+      {
+        "name": "Pro-L 2",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "FabFilter",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/pro-r-2-by-fabfilter",
+    "products": [
+      {
+        "name": "Pro-R 2",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "FabFilter",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/saturn-2-by-fabfilter",
+    "products": [
+      {
+        "name": "Saturn 2",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "FabFilter",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/pro-mb-by-fabfilter",
+    "products": [
+      {
+        "name": "Pro-MB",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "FabFilter",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/timeless-3-by-fabfilter",
+    "products": [
+      {
+        "name": "Timeless 3",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "FabFilter",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/twin-3-by-fabfilter",
+    "products": [
+      {
+        "name": "Twin 3",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "FabFilter",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/volcano-3-by-fabfilter",
+    "products": [
+      {
+        "name": "Volcano 3",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "FabFilter",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/pro-ds-by-fabfilter",
+    "products": [
+      {
+        "name": "Pro-DS",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "FabFilter",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/pro-g-by-fabfilter",
+    "products": [
+      {
+        "name": "Pro-G",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "FabFilter",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/micro-by-fabfilter",
+    "products": [
+      {
+        "name": "Micro",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Xfer Records",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/serum-2-by-xfer-records",
+    "products": [
+      {
+        "name": "Serum 2",
+        "aliases": [
+          "Serum2"
+        ],
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "u-he",
+    "type": "html",
+    "url": "https://u-he.com/products/",
+    "products": [
+      {
+        "name": "Diva",
+        "pattern": "dl\\.u-he\\.com/releases/Diva_(\\d{3,4})_",
+        "format": "digits"
+      },
+      {
+        "name": "Zebra 3",
+        "pattern": "dl\\.u-he\\.com/releases/Zebra3_(\\d{3,4})_",
+        "format": "digits"
+      },
+      {
+        "name": "Hive 2",
+        "pattern": "dl\\.u-he\\.com/releases/Hive_(\\d{3,4})_",
+        "format": "digits"
+      },
+      {
+        "name": "Repro",
+        "pattern": "dl\\.u-he\\.com/releases/Repro_(\\d{3,4})_",
+        "format": "digits"
+      },
+      {
+        "name": "Satin",
+        "pattern": "dl\\.u-he\\.com/releases/Satin_(\\d{3,4})_",
+        "format": "digits"
+      },
+      {
+        "name": "Presswerk",
+        "pattern": "dl\\.u-he\\.com/releases/Presswerk_(\\d{3,4})_",
+        "format": "digits"
+      },
+      {
+        "name": "Bazille",
+        "pattern": "dl\\.u-he\\.com/releases/Bazille_(\\d{3,4})_",
+        "format": "digits"
+      },
+      {
+        "name": "ACE",
+        "pattern": "dl\\.u-he\\.com/releases/ACE_(\\d{3,4})_",
+        "format": "digits"
+      }
+    ]
+  },
+  {
+    "vendor": "Valhalla DSP",
+    "type": "html",
+    "url": "https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/",
+    "products": [
+      {
+        "name": "ValhallaVintageVerb",
+        "pattern": "Current Version:?\\s*(\\d+(?:\\.\\d+)+)"
+      }
+    ]
+  },
+  {
+    "vendor": "Valhalla DSP",
+    "type": "html",
+    "url": "https://valhalladsp.com/shop/reverb/valhalla-supermassive/",
+    "products": [
+      {
+        "name": "ValhallaSupermassive",
+        "pattern": "Current Version:?\\s*(\\d+(?:\\.\\d+)+)"
+      }
+    ]
+  },
+  {
+    "vendor": "Valhalla DSP",
+    "type": "html",
+    "url": "https://valhalladsp.com/shop/reverb/valhalla-room/",
+    "products": [
+      {
+        "name": "ValhallaRoom",
+        "pattern": "Current Version:?\\s*(\\d+(?:\\.\\d+)+)"
+      }
+    ]
+  },
+  {
+    "vendor": "Valhalla DSP",
+    "type": "html",
+    "url": "https://valhalladsp.com/shop/reverb/valhalla-plate/",
+    "products": [
+      {
+        "name": "ValhallaPlate",
+        "pattern": "Current Version:?\\s*(\\d+(?:\\.\\d+)+)"
+      }
+    ]
+  },
+  {
+    "vendor": "Valhalla DSP",
+    "type": "html",
+    "url": "https://valhalladsp.com/shop/reverb/valhalla-shimmer/",
+    "products": [
+      {
+        "name": "ValhallaShimmer",
+        "pattern": "Current Version:?\\s*(\\d+(?:\\.\\d+)+)"
+      }
+    ]
+  },
+  {
+    "vendor": "Valhalla DSP",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/valhalladelay-by-valhalla-dsp",
+    "products": [
+      {
+        "name": "ValhallaDelay",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Soundtoys",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/soundtoys-5-5-by-soundtoys",
+    "products": [
+      {
+        "name": "Soundtoys 5 bundle",
+        "aliases": [
+          "Soundtoys 5"
+        ],
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Tokyo Dawn Records",
+    "type": "html",
+    "url": "https://www.tokyodawn.net/tdr-nova/",
+    "products": [
+      {
+        "name": "TDR Nova",
+        "pattern": "Latest version:?\\s*(?:<[^>]*>\\s*)*(\\d+(?:\\.\\d+)+)"
+      }
+    ]
+  },
+  {
+    "vendor": "Tokyo Dawn Records",
+    "type": "html",
+    "url": "https://www.tokyodawn.net/tdr-kotelnikov/",
+    "products": [
+      {
+        "name": "TDR Kotelnikov",
+        "pattern": "Latest version:?\\s*(?:<[^>]*>\\s*)*(\\d+(?:\\.\\d+)+)"
+      }
+    ]
+  },
+  {
+    "vendor": "Tokyo Dawn Records",
+    "type": "html",
+    "url": "https://www.tokyodawn.net/tdr-kotelnikov-ge/",
+    "products": [
+      {
+        "name": "TDR Kotelnikov GE",
+        "pattern": "Latest version:?\\s*(?:<[^>]*>\\s*)*(\\d+(?:\\.\\d+)+)"
+      }
+    ]
+  },
+  {
+    "vendor": "Tokyo Dawn Records",
+    "type": "html",
+    "url": "https://www.tokyodawn.net/tdr-vos-slickeq/",
+    "products": [
+      {
+        "name": "TDR VOS SlickEQ",
+        "pattern": "Latest version:?\\s*(?:<[^>]*>\\s*)*(\\d+(?:\\.\\d+)+)"
+      }
+    ]
+  },
+  {
+    "vendor": "Vital Audio",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/vital-by-matt-tytel",
+    "products": [
+      {
+        "name": "Vital",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Arturia",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/pigments-by-arturia",
+    "products": [
+      {
+        "name": "Pigments",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Native Instruments",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/kontakt-by-native-instruments",
+    "products": [
+      {
+        "name": "Kontakt 8",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Native Instruments",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/massive-x-by-native-instruments",
+    "products": [
+      {
+        "name": "Massive X",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "iZotope",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/ozone-12-advanced-by-izotope",
+    "products": [
+      {
+        "name": "Ozone 12 Advanced",
+        "aliases": [
+          "Ozone 12"
+        ],
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "iZotope",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/neutron-by-izotope",
+    "products": [
+      {
+        "name": "Neutron 5",
+        "aliases": [
+          "Neutron 5 Advanced"
+        ],
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "iZotope",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/rx-12-advanced-by-izotope",
+    "products": [
+      {
+        "name": "RX 12 Advanced",
+        "aliases": [
+          "RX 12"
+        ],
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Kilohearts",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/phase-plant-by-kilohearts",
+    "products": [
+      {
+        "name": "Phase Plant",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Surge Synth Team",
+    "name": "Surge XT",
+    "type": "github",
+    "url": "https://api.github.com/repos/surge-synthesizer/releases-xt/releases/latest",
+    "download": "https://surge-synthesizer.github.io/"
+  },
+  {
+    "vendor": "Spitfire Audio",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/labs-by-spitfire-audio",
+    "products": [
+      {
+        "name": "LABS",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Plugin Alliance",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/brainworx-bx_console-ssl-4000-e-by-plugin-alliance",
+    "products": [
+      {
+        "name": "Brainworx bx_console SSL 4000 E",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Cableguys",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/shaperbox-by-cableguys",
+    "products": [
+      {
+        "name": "ShaperBox 3",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Output",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/arcade-by-output",
+    "products": [
+      {
+        "name": "Arcade",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Output",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/portal-by-output",
+    "products": [
+      {
+        "name": "Portal",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Baby Audio",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/crystalline-by-baby-audio",
+    "products": [
+      {
+        "name": "Crystalline",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Sonible",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/smart-eq-4-by-sonible",
+    "products": [
+      {
+        "name": "smart:EQ 4",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "oeksound",
+    "type": "html",
+    "url": "https://oeksound.com/plugins/soothe3/",
+    "products": [
+      {
+        "name": "soothe3",
+        "pattern": "soothe3_v(\\d+(?:\\.\\d+)+)_"
+      }
+    ]
+  },
+  {
+    "vendor": "oeksound",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/soothe2-by-oeksound",
+    "products": [
+      {
+        "name": "soothe2",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Toontrack",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/ezdrummer-3-by-toontrack-music",
+    "products": [
+      {
+        "name": "EZdrummer 3",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Eventide",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/h3000-factory-mk-ii-by-eventide",
+    "products": [
+      {
+        "name": "H3000 Factory Mk II",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Universal Audio",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/uadx-1176-fet-compressor-by-universal-audio",
+    "products": [
+      {
+        "name": "UADx 1176 FET Compressor",
+        "aliases": [
+          "UADx 1176"
+        ],
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Softube",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/tape-by-softube",
+    "products": [
+      {
+        "name": "Tape",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Kush Audio",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/ubk-2-by-kush-audio",
+    "products": [
+      {
+        "name": "UBK-2",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Klevgrand",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/korvpressor-by-klevgrand",
+    "products": [
+      {
+        "name": "Korvpressor",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Klevgrand",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/daw-cassette-by-klevgrand",
+    "products": [
+      {
+        "name": "DAW Cassette",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Goodhertz",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/vulf-compressor-by-goodhertz",
+    "products": [
+      {
+        "name": "Vulf Compressor",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "D16 Group",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/decimort-2-by-d16-group",
+    "products": [
+      {
+        "name": "Decimort 2",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "D16 Group",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/toraverb-2-by-d16-group",
+    "products": [
+      {
+        "name": "Toraverb 2",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Audio Damage",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/dubstation-2-by-audio-damage",
+    "products": [
+      {
+        "name": "Dubstation 2",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "Audio Damage",
+    "type": "html",
+    "url": "https://www.kvraudio.com/product/eos-2-by-audio-damage",
+    "products": [
+      {
+        "name": "Eos 2",
+        "pattern": "Product\\s*(?:<[^>]*>\\s*)*Version[\\s\\S]{0,400}?(\\d+(?:\\.\\d+)+)"
+      }
+    ],
+    "note": "KVR-Produktseite (Drittanbieter)"
+  },
+  {
+    "vendor": "TAL Software",
+    "type": "html",
+    "url": "https://tal-software.com/products/tal-u-no-lx",
+    "products": [
+      {
+        "name": "TAL-U-NO-LX",
+        "pattern": "\\(v\\s*(\\d+(?:\\.\\d+)+)\\)"
+      }
+    ]
+  },
+  {
+    "vendor": "TAL Software",
+    "type": "html",
+    "url": "https://tal-software.com/products/tal-sampler",
+    "products": [
+      {
+        "name": "TAL-Sampler",
+        "pattern": "Version\\s+(\\d+(?:\\.\\d+)+)\\s*/"
+      }
+    ]
+  }
+]

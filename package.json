@@ -1,0 +1,8 @@
+{
+  "name": "plugin-versionen",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gemeinsame Versions-Datenbank für Audio-Plugins (genutzt von Plugin Organizer)",
+  "scripts": { "test": "node --test test/*.test.js", "crawl": "node tools/crawl-versions.js" },
+  "license": "MIT"
+}
