@@ -67,7 +67,7 @@ function computeInsights(products, { platform, daws = [], updates = {} }) {
       const size = p.items.filter((i) => i.format === 'VST2').reduce((s, i) => s + i.size, 0);
       if (!daws.length || dawFormats.has('VST3')) add('unneeded', p, 'VST2 zusätzlich zu VST3 installiert (VST2 wird meist nicht gebraucht)', { format: 'VST2', size });
     }
-    if (p.duplicateFormats.length) add('duplicate', p, `${p.duplicateFormats.join(', ')} mehrfach aktiv installiert`);
+    if (p.duplicateFormats.length) add('duplicate', p, p.duplicateFormats.map((f) => `${f} liegt ${p.items.filter((i) => i.format === f && i.enabled).length}× aktiv vor`).join(', ') + ' (gleiches Format doppelt)');
     if (p.conflicts.length) add('conflict', p, 'Nach einem Update doppelt vorhanden (aktiv und deaktiviert)');
     if (p.versionMismatch) add('mismatch', p, 'Formate haben unterschiedliche Versionen: ' + [...new Set(p.items.map((i) => `${i.format} ${i.version || '?'}`))].join(', '));
   }
