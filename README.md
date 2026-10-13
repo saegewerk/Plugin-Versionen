@@ -22,3 +22,9 @@ Nach Prüfung das Label `bestätigt` setzen: Der nächste Lauf übernimmt die Ve
 ```
 
 Lokal testen: `npm run crawl` und `npm test`.
+
+## Hersteller ohne automatische Quelle
+
+Manche Seiten sperren automatische Abrufe (z. B. KVR Audio, Valhalla DSP) oder nennen keine Versionsnummer.
+Für diese Plugins steht der zuletzt bekannte Stand in `versions.json`; neue Versionen kommen über Meldungen aus der App.
+Neue Quelle ausprobieren: Workflow „Quelle testen“ starten und die Adresse eintragen. Er zeigt, was die Seite rund um „version“ liefert.
