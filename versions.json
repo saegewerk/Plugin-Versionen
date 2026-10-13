@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-10-13T11:09:45.830Z",
+  "generated": "2026-10-13T11:14:43.436Z",
   "plugins": [
     {
       "vendor": "Arturia",
@@ -337,18 +337,18 @@
     {
       "vendor": "TAL Software",
       "name": "TAL-Sampler",
-      "latest": "4.8.2",
+      "latest": "4.9.5",
       "url": "https://tal-software.com/products/tal-sampler",
-      "released": null,
-      "source": "recherche"
+      "released": "2026-10-13",
+      "source": "html"
     },
     {
       "vendor": "TAL Software",
       "name": "TAL-U-NO-LX",
-      "latest": "3.2.4",
+      "latest": "4.1.1",
       "url": "https://tal-software.com/products/tal-u-no-lx",
-      "released": null,
-      "source": "recherche"
+      "released": "2026-10-13",
+      "source": "html"
     },
     {
       "vendor": "Tokyo Dawn Records",
