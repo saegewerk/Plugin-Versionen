@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-10-12T21:00:00.000Z",
+  "generated": "2026-10-13T11:09:45.830Z",
   "plugins": [
     {
       "vendor": "Arturia",
@@ -265,7 +265,7 @@
       "latest": "1.0.5",
       "url": "https://oeksound.com/plugins/soothe3/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "Output",
@@ -330,9 +330,9 @@
       "vendor": "Surge Synth Team",
       "name": "Surge XT",
       "latest": "1.3.4",
-      "url": "https://github.com/surge-synthesizer/releases-xt/releases/latest",
+      "url": "https://surge-synthesizer.github.io/",
       "released": null,
-      "source": "recherche"
+      "source": "github"
     },
     {
       "vendor": "TAL Software",
@@ -356,7 +356,7 @@
       "latest": "1.6.7",
       "url": "https://www.tokyodawn.net/tdr-kotelnikov/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "Tokyo Dawn Records",
@@ -364,15 +364,15 @@
       "latest": "1.6.5",
       "url": "https://www.tokyodawn.net/tdr-kotelnikov-ge/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "Tokyo Dawn Records",
       "name": "TDR Nova",
-      "latest": "2.2.2",
+      "latest": "2.2.3",
       "url": "https://www.tokyodawn.net/tdr-nova/",
-      "released": null,
-      "source": "recherche"
+      "released": "2026-10-13",
+      "source": "html"
     },
     {
       "vendor": "Tokyo Dawn Records",
@@ -380,7 +380,7 @@
       "latest": "1.3.9",
       "url": "https://www.tokyodawn.net/tdr-vos-slickeq/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "Toontrack",
@@ -396,7 +396,7 @@
       "latest": "1.4.3",
       "url": "https://u-he.com/products/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "u-he",
@@ -404,7 +404,7 @@
       "latest": "1.1.3",
       "url": "https://u-he.com/products/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "u-he",
@@ -412,7 +412,7 @@
       "latest": "1.4.8",
       "url": "https://u-he.com/products/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "u-he",
@@ -420,7 +420,7 @@
       "latest": "2.1.2",
       "url": "https://u-he.com/products/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "u-he",
@@ -428,7 +428,7 @@
       "latest": "1.1.6",
       "url": "https://u-he.com/products/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "u-he",
@@ -436,7 +436,7 @@
       "latest": "1.1.3",
       "url": "https://u-he.com/products/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "u-he",
@@ -444,7 +444,7 @@
       "latest": "1.3.3",
       "url": "https://u-he.com/products/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "u-he",
@@ -452,7 +452,7 @@
       "latest": "3.0.2",
       "url": "https://u-he.com/products/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "Universal Audio",
@@ -479,7 +479,7 @@
       "latest": "1.6.8",
       "url": "https://valhalladsp.com/shop/reverb/valhalla-plate/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "Valhalla DSP",
@@ -487,7 +487,7 @@
       "latest": "2.0.5",
       "url": "https://valhalladsp.com/shop/reverb/valhalla-room/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "Valhalla DSP",
@@ -495,7 +495,7 @@
       "latest": "1.3.0",
       "url": "https://valhalladsp.com/shop/reverb/valhalla-shimmer/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "Valhalla DSP",
@@ -503,7 +503,7 @@
       "latest": "5.0.0",
       "url": "https://valhalladsp.com/shop/reverb/valhalla-supermassive/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "Valhalla DSP",
