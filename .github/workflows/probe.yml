@@ -1,0 +1,16 @@
+name: Quelle testen
+# Manuell starten, um zu sehen, was eine Seite liefert (für neue Einträge in sources.json).
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: 'Adressen, durch Leerzeichen getrennt'
+        required: true
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node tools/probe.js ${{ inputs.urls }}

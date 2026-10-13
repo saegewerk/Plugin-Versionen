@@ -52,12 +52,12 @@ function extractVersion(html, pattern) {
   return m ? m[1] : null;
 }
 
-async function fetchText(url, fetchImpl = globalThis.fetch) {
+async function fetchText(url, fetchImpl = globalThis.fetch, headers = { 'User-Agent': 'PluginOrganizer/0.5' }) {
   const ctl = new AbortController();
   const t = setTimeout(() => ctl.abort(), 15000);
   try {
-    const r = await fetchImpl(url, { signal: ctl.signal, headers: { 'User-Agent': 'PluginOrganizer/0.5' } });
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const r = await fetchImpl(url, { signal: ctl.signal, headers });
+    if (!r.ok) { const e = new Error(`HTTP ${r.status}`); e.status = r.status; throw e; }
     return await r.text();
   } finally { clearTimeout(t); }
 }

@@ -10,6 +10,23 @@ const { cmpVersion } = require('./insights');
 const { extractVersion, fetchText } = require('./updates');
 
 const FORMAT = 1;
+
+// Der Crawler meldet sich wie ein normaler Browser; viele Herstellerseiten sperren unbekannte Programme.
+const BROWSER_HEADERS = {
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
+  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,application/json;q=0.8,*/*;q=0.7',
+  'Accept-Language': 'en-US,en;q=0.9,de;q=0.8',
+};
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// Einmal wiederholen, wenn eine Seite kurz blockt oder überlastet ist
+async function fetchPage(url, fetchImpl, { retryDelay = 4000 } = {}) {
+  try { return await fetchText(url, fetchImpl, BROWSER_HEADERS); } catch (e) {
+    if (![403, 429, 500, 502, 503, 504].includes(e.status)) throw e;
+    await sleep(retryDelay);
+    return fetchText(url, fetchImpl, BROWSER_HEADERS);
+  }
+}
 const VERSION_RE = /^\d+(?:\.\d+){0,3}[a-z]?\d*$/i;
 
 function cleanVersion(v) {
@@ -40,16 +57,16 @@ function sparkleVersion(xml) {
 }
 
 // Liefert für eine Quelle die Versionen ihrer Produkte: [{ name, latest }]
-async function readSource(src, fetchImpl) {
+async function readSource(src, fetchImpl, opts = {}) {
   const products = src.products || [{ name: src.name, pattern: src.pattern, path: src.path }];
   const type = src.type || 'html';
   if (type === 'github') {
     // url: https://api.github.com/repos/<owner>/<repo>/releases/latest
-    const j = JSON.parse(await fetchText(src.url, fetchImpl));
+    const j = JSON.parse(await fetchPage(src.url, fetchImpl, opts));
     const v = cleanVersion(String(j.tag_name || j.name || '').replace(/^[^\d]*/, ''));
     return products.map((p) => ({ name: p.name, latest: v }));
   }
-  const text = await fetchText(src.url, fetchImpl);
+  const text = await fetchPage(src.url, fetchImpl, opts);
   if (type === 'sparkle') return products.map((p) => ({ name: p.name, latest: sparkleVersion(text) }));
   if (type === 'json') {
     const j = JSON.parse(text);
@@ -62,13 +79,13 @@ const keyOf = (e) => (e.vendor + '|' + e.name).toLowerCase();
 
 // Crawlt alle Quellen. Fehlschläge behalten den alten Stand; ein plötzlich NIEDRIGERER Wert
 // gilt als Fehlgriff des Musters und wird nicht übernommen.
-async function crawl(sources, { previous = null, fetchImpl, now = new Date() } = {}) {
+async function crawl(sources, { previous = null, fetchImpl, now = new Date(), retryDelay } = {}) {
   const old = new Map(((previous && previous.plugins) || []).map((e) => [keyOf(e), e]));
   const next = new Map(old);
   const log = [];
   for (const src of sources) {
     let got;
-    try { got = await readSource(src, fetchImpl); } catch (e) {
+    try { got = await readSource(src, fetchImpl, { retryDelay }); } catch (e) {
       log.push({ vendor: src.vendor, url: src.url, status: 'fehler', error: e.message });
       continue;
     }

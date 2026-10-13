@@ -34,7 +34,7 @@ const PAGES = {
 };
 
 test('Crawler liest GitHub, Sparkle, HTML mit mehreren Produkten und JSON', async () => {
-  const { db, log } = await vdb.crawl(SOURCES, { fetchImpl: fakeFetch(PAGES), now: new Date('2026-10-12T03:00:00Z') });
+  const { db, log } = await vdb.crawl(SOURCES, { retryDelay: 1, fetchImpl: fakeFetch(PAGES), now: new Date('2026-10-12T03:00:00Z') });
   const v = Object.fromEntries(db.plugins.map((p) => [p.name, p.latest]));
   assert.deepStrictEqual(v, { 'Surge XT': '1.3.4', 'Synth One': '2.1.0', Comp: '3.2.1', Verb: '1.10', Delay: '5.0' });
   assert.deepStrictEqual(db.plugins.find((p) => p.name === 'Verb').aliases, ['Acme Reverb']);
@@ -43,9 +43,9 @@ test('Crawler liest GitHub, Sparkle, HTML mit mehreren Produkten und JSON', asyn
 });
 
 test('Crawler behält alten Stand bei Fehlern und ignoriert plötzlich niedrigere Versionen', async () => {
-  const { db: first } = await vdb.crawl(SOURCES, { fetchImpl: fakeFetch(PAGES), now: new Date('2026-10-01') });
+  const { db: first } = await vdb.crawl(SOURCES, { retryDelay: 1, fetchImpl: fakeFetch(PAGES), now: new Date('2026-10-01') });
   const pages2 = { ...PAGES, 'https://acme.test/versions': '<li>Comp version 1.0</li><li>Verb v1.11</li>', 'https://beta.test/api': new Error('down') };
-  const { db, log } = await vdb.crawl(SOURCES, { previous: first, fetchImpl: fakeFetch(pages2), now: new Date('2026-10-12') });
+  const { db, log } = await vdb.crawl(SOURCES, { retryDelay: 1, previous: first, fetchImpl: fakeFetch(pages2), now: new Date('2026-10-12') });
   const get = (n) => db.plugins.find((p) => p.name === n);
   assert.strictEqual(get('Comp').latest, '3.2.1', 'niedrigere Version wird nicht übernommen');
   assert.ok(log.some((l) => l.name === 'Comp' && l.status === 'verdächtig'));
