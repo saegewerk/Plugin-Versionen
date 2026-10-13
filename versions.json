@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-10-13T11:14:43.436Z",
+  "generated": "2026-10-13T11:17:24.430Z",
   "plugins": [
     {
       "vendor": "Arturia",
@@ -118,9 +118,9 @@
       "vendor": "FabFilter",
       "name": "Pro-Q 4",
       "latest": "4.13",
-      "url": "https://www.kvraudio.com/product/pro-q-4-by-fabfilter",
+      "url": "https://www.fabfilter.com/download",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "FabFilter",
@@ -223,9 +223,9 @@
       "vendor": "Klevgrand",
       "name": "Korvpressor",
       "latest": "2.1.2",
-      "url": "https://www.kvraudio.com/product/korvpressor-by-klevgrand",
+      "url": "https://www.klevgrand.com/products/korvpressor",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "Kush Audio",
@@ -303,9 +303,9 @@
       "vendor": "Sonible",
       "name": "smart:EQ 4",
       "latest": "1.1.1",
-      "url": "https://www.kvraudio.com/product/smart-eq-4-by-sonible",
+      "url": "https://www.sonible.com/smarteq4/",
       "released": null,
-      "source": "recherche"
+      "source": "html"
     },
     {
       "vendor": "Soundtoys",
@@ -345,7 +345,7 @@
     {
       "vendor": "TAL Software",
       "name": "TAL-U-NO-LX",
-      "latest": "3.2.4",
+      "latest": "5.1.2",
       "url": "https://tal-software.com/products/tal-u-no-lx",
       "released": "2026-10-13",
       "source": "html"
