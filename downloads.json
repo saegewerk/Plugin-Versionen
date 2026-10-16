@@ -1,0 +1,289 @@
+{
+  "format": 1,
+  "updated": "2026-10-16",
+  "vendors": {
+    "Antares": {
+      "download": "https://www.antarestech.com/software-download",
+      "manager": "AutoTune Central",
+      "confidence": "high"
+    },
+    "Apple": {
+      "download": "https://apps.apple.com/us/app/logic-pro/id634148309?mt=12",
+      "manager": "Mac App Store",
+      "confidence": "high"
+    },
+    "Arturia": {
+      "download": "https://www.arturia.com/support/downloads-manuals/product/asc",
+      "manager": "Arturia Software Center",
+      "products": {
+        "Pigments": "https://www.arturia.com/products/software-instruments/pigments/overview"
+      },
+      "confidence": "high"
+    },
+    "Audio Damage": {
+      "download": "https://www.audiodamage.com/pages/support",
+      "products": {
+        "Dubstation 2": "https://www.audiodamage.com/products/ad036-dubstation-2",
+        "Eos 2": "https://www.audiodamage.com/products/ad034-eos-2"
+      },
+      "confidence": "medium"
+    },
+    "Baby Audio": {
+      "download": "https://babyaud.io/downloads",
+      "products": {
+        "Crystalline": "https://babyaud.io/crystalline"
+      },
+      "confidence": "high"
+    },
+    "Cableguys": {
+      "download": "https://www.cableguys.com/login",
+      "products": {
+        "ShaperBox 3": "https://www.cableguys.com/shaperbox"
+      },
+      "confidence": "high"
+    },
+    "D16 Group": {
+      "download": "https://userzone.d16.pl/downloads",
+      "products": {
+        "Decimort 2": "https://d16.pl/decimort2",
+        "Toraverb 2": "https://d16.pl/toraverb2"
+      },
+      "confidence": "medium"
+    },
+    "Eventide": {
+      "download": "https://www.eventideaudio.com/downloads/",
+      "products": {
+        "H3000 Factory Mk II": "https://www.eventideaudio.com/plug-ins/h3000-factory-mk-ii/"
+      },
+      "confidence": "high"
+    },
+    "FabFilter": {
+      "download": "https://www.fabfilter.com/download",
+      "products": {
+        "Micro": "https://www.fabfilter.com/products/micro-mini-filter-plug-in",
+        "Pro-C 3": "https://www.fabfilter.com/products/pro-c-3-compressor-plug-in",
+        "Pro-DS": "https://www.fabfilter.com/products/pro-ds-de-esser-plug-in",
+        "Pro-G": "https://www.fabfilter.com/products/pro-g-gate-expander-plug-in",
+        "Pro-L 2": "https://www.fabfilter.com/products/pro-l-2-limiter-plug-in",
+        "Pro-MB": "https://www.fabfilter.com/products/pro-mb-multiband-compressor-plug-in",
+        "Pro-Q 4": "https://www.fabfilter.com/products/pro-q-4-equalizer-plug-in",
+        "Pro-R 2": "https://www.fabfilter.com/products/pro-r-2-reverb-plug-in",
+        "Saturn 2": "https://www.fabfilter.com/products/saturn-2-multiband-distortion-saturation-plug-in",
+        "Timeless 3": "https://www.fabfilter.com/products/timeless-3-delay-plug-in",
+        "Twin 3": "https://www.fabfilter.com/products/twin-3-synthesizer-plug-in",
+        "Volcano 3": "https://www.fabfilter.com/products/volcano-3-filter-plug-in"
+      },
+      "confidence": "high"
+    },
+    "Goodhertz": {
+      "download": "https://goodhertz.com/downloads/",
+      "products": {
+        "Vulf Compressor": "https://goodhertz.com/vulf-comp/"
+      },
+      "confidence": "high"
+    },
+    "Kilohearts": {
+      "download": "https://kilohearts.com/download",
+      "manager": "Kilohearts Installer",
+      "products": {
+        "Phase Plant": "https://kilohearts.com/products/phase_plant"
+      },
+      "confidence": "high"
+    },
+    "Klevgrand": {
+      "download": "https://klevgrand.com/helper",
+      "manager": "Klevgrand Helper",
+      "products": {
+        "DAW Cassette": "https://klevgrand.com/products/dawcassette",
+        "Korvpressor": "https://klevgrand.com/products/korvpressor"
+      },
+      "confidence": "high"
+    },
+    "Kush Audio": {
+      "download": "https://thehouseofkush.com/pages/downloads",
+      "products": {
+        "UBK-2": "https://thehouseofkush.com/products/ubk-2"
+      },
+      "confidence": "high"
+    },
+    "Native Instruments": {
+      "download": "https://www.native-instruments.com/pages/native-access",
+      "manager": "Native Access",
+      "products": {
+        "Kontakt 8": "https://www.native-instruments.com/products/kontakt",
+        "Massive X": "https://www.native-instruments.com/products/massive-x"
+      },
+      "confidence": "high"
+    },
+    "Output": {
+      "download": "https://output.com/hub",
+      "manager": "Output Hub",
+      "products": {
+        "Portal": "https://output.com/products/portal"
+      },
+      "confidence": "high"
+    },
+    "Plugin Alliance": {
+      "download": "https://www.plugin-alliance.com/pages/installation-manager",
+      "manager": "Plugin Alliance Installation Manager",
+      "products": {
+        "Brainworx bx_console SSL 4000 E": "https://www.plugin-alliance.com/products/bx_console-ssl-4000-e"
+      },
+      "confidence": "high"
+    },
+    "Slate Digital": {
+      "download": "https://app.completeaccess.audio/installers",
+      "manager": "Complete Access Hub (formerly Slate Digital Connect)",
+      "confidence": "high"
+    },
+    "Softube": {
+      "download": "https://www.softube.com/us/my-account-settings",
+      "manager": "Softube Central",
+      "products": {
+        "Tape": "https://www.softube.com/us/plug-ins/tape"
+      },
+      "confidence": "high"
+    },
+    "Sonible": {
+      "download": "https://www.sonible.com/download",
+      "products": {
+        "smart:EQ 4": "https://www.sonible.com/smarteq4/"
+      },
+      "confidence": "high"
+    },
+    "Soundtoys": {
+      "download": "https://www.soundtoys.com/downloads/",
+      "products": {
+        "Soundtoys 5 bundle": "https://store.soundtoys.com/product/soundtoys-5/"
+      },
+      "confidence": "medium"
+    },
+    "Spectrasonics": {
+      "download": "https://auth.spectrasonics.net/useracct/index.php",
+      "manager": "Spectrasonics Download Manager",
+      "confidence": "high"
+    },
+    "Spitfire Audio": {
+      "download": "https://www.spitfireaudio.com/en-us/pages/spitfire-audio-app",
+      "manager": "Spitfire Audio App",
+      "products": {
+        "LABS": "https://labs.spitfireaudio.com/"
+      },
+      "confidence": "high"
+    },
+    "Steinberg": {
+      "download": "https://o.steinberg.net/en/support/downloads/steinberg_download_assistant.html",
+      "manager": "Steinberg Download Assistant",
+      "confidence": "high"
+    },
+    "Surge Synth Team": {
+      "download": "https://surge-synthesizer.github.io/downloads/",
+      "products": {
+        "Surge XT": "https://surge-synthesizer.github.io/"
+      },
+      "confidence": "high"
+    },
+    "TAL Software": {
+      "download": "https://tal-software.com/login",
+      "products": {
+        "TAL-Sampler": "https://tal-software.com/products/tal-sampler",
+        "TAL-U-NO-LX": "https://tal-software.com/products/tal-u-no-lx"
+      },
+      "confidence": "medium"
+    },
+    "Tokyo Dawn Records": {
+      "download": "https://www.tokyodawn.net/tokyo-dawn-labs/",
+      "products": {
+        "TDR Kotelnikov": "https://www.tokyodawn.net/tdr-kotelnikov/",
+        "TDR Kotelnikov GE": "https://www.tokyodawn.net/tdr-kotelnikov-ge/",
+        "TDR Nova": "https://www.tokyodawn.net/tdr-nova/",
+        "TDR VOS SlickEQ": "https://www.tokyodawn.net/tdr-vos-slickeq/"
+      },
+      "confidence": "medium"
+    },
+    "Toontrack": {
+      "download": "https://www.toontrack.com/product-manager/",
+      "manager": "Toontrack Product Manager",
+      "products": {
+        "EZdrummer 3": "https://www.toontrack.com/product/ezdrummer-3/"
+      },
+      "confidence": "high"
+    },
+    "Universal Audio": {
+      "download": "https://www.uaudio.com/pages/download-ua-connect",
+      "manager": "UA Connect",
+      "products": {
+        "UADx 1176 FET Compressor": "https://www.uaudio.com/products/ua-1176-fet"
+      },
+      "confidence": "high"
+    },
+    "Valhalla DSP": {
+      "download": "https://valhalladsp.com/my-account/",
+      "products": {
+        "ValhallaDelay": "https://valhalladsp.com/shop/delay/valhalladelay/",
+        "ValhallaPlate": "https://valhalladsp.com/shop/reverb/valhalla-plate/",
+        "ValhallaRoom": "https://valhalladsp.com/shop/reverb/valhalla-room/",
+        "ValhallaShimmer": "https://valhalladsp.com/shop/reverb/valhalla-shimmer/",
+        "ValhallaSupermassive": "https://valhalladsp.com/shop/reverb/valhalla-supermassive/",
+        "ValhallaVintageVerb": "https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/"
+      },
+      "confidence": "high"
+    },
+    "Vital Audio": {
+      "download": "https://vital.audio/",
+      "products": {
+        "Vital": "https://vital.audio/"
+      },
+      "confidence": "medium"
+    },
+    "Waves": {
+      "download": "https://www.waves.com/downloads/central",
+      "manager": "Waves Central",
+      "confidence": "high"
+    },
+    "XLN Audio": {
+      "download": "https://www.xlnaudio.com/install",
+      "manager": "XLN Online Installer",
+      "confidence": "high"
+    },
+    "Xfer Records": {
+      "download": "https://xferrecords.com/my_account",
+      "products": {
+        "Serum 2": "https://xferrecords.com/products/serum-2"
+      },
+      "confidence": "medium"
+    },
+    "iZotope": {
+      "download": "https://www.izotope.com/pages/product-downloads",
+      "manager": "iZotope Product Portal",
+      "products": {
+        "Neutron 5": "https://www.izotope.com/products/neutron",
+        "Ozone 12 Advanced": "https://www.izotope.com/products/ozone-advanced",
+        "RX 12 Advanced": "https://www.izotope.com/products/rx-advanced"
+      },
+      "confidence": "high"
+    },
+    "oeksound": {
+      "download": "https://oeksound.com/downloads/",
+      "products": {
+        "soothe3": "https://oeksound.com/plugins/soothe3/",
+        "soothe2": "https://versioncheck.oeksound.com/plugins/soothe2/"
+      },
+      "confidence": "high"
+    },
+    "u-he": {
+      "download": "https://u-he.com/support/#downloads",
+      "products": {
+        "ACE": "https://u-he.com/products/ace/",
+        "Bazille": "https://u-he.com/products/bazille/",
+        "Diva": "https://u-he.com/products/diva/",
+        "Hive 2": "https://u-he.com/products/hive/",
+        "Presswerk": "https://u-he.com/products/presswerk/",
+        "Repro": "https://u-he.com/products/repro/",
+        "Satin": "https://u-he.com/products/satin/",
+        "Zebra 3": "https://u-he.com/products/synths/zebra3/"
+      },
+      "confidence": "high"
+    }
+  }
+}
