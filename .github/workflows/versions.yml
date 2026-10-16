@@ -1,5 +1,6 @@
 name: Versions-Datenbank
 # Crawlt jede Nacht die Hersteller-Seiten und aktualisiert versions.json.
+# Prüft außerdem Apple- und Microsoft-News auf Änderungen, die Plugins betreffen (Issues mit Label "os-news").
 # Gemeldete Versionen: Issues mit Label "version-meldung"; nach Prüfung Label "bestätigt" setzen,
 # dann übernimmt der nächste Lauf sie und schließt das Issue.
 on:
@@ -26,6 +27,14 @@ jobs:
         env: { GH_TOKEN: '${{ github.token }}' }
         run: gh issue list --label "bestätigt" --label "version-meldung" --state open --json number,body --limit 200 > /tmp/reports.json
       - run: node tools/crawl-versions.js sources.json versions.json /tmp/reports.json
+      - name: Betriebssystem-News prüfen
+        # Apple- und Microsoft-News nach Rosetta, 32 Bit, ARM usw. durchsuchen; neue Treffer werden Issues (Label os-news)
+        continue-on-error: true
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: |
+          gh label create os-news --color d93f0b --description "Mögliche Betriebssystem-Änderung für Plugins, bitte prüfen" --force
+          gh issue list --label os-news --state all --limit 500 --json body --jq '.[].body' | grep -o 'https://[^ )]*' > /tmp/known-news.txt || true
+          node tools/check-news.js news-sources.json /tmp/known-news.txt --create-issues
       - name: Änderungen speichern
         run: |
           if git diff --quiet; then echo "Keine neuen Versionen."; exit 0; fi

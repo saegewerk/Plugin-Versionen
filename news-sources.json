@@ -1,0 +1,48 @@
+{
+  "maxAgeDays": 180,
+  "ignore": [
+    "https://developer.apple.com/news/?id=w5ngl9k2",
+    "https://developer.apple.com/news/?id=k1mtkt1k",
+    "https://developer.apple.com/news/?id=qtzr82f0"
+  ],
+  "keywords": [
+    "rosetta",
+    "intel-based",
+    "intel mac",
+    "intel processor",
+    "32-bit",
+    "32 bit",
+    "audio unit",
+    "auv3",
+    "core audio",
+    "coreaudio",
+    "vst",
+    "plug-in",
+    "plugin",
+    "kernel extension",
+    "arm64",
+    "arm64ec",
+    "prism",
+    "wow64",
+    "end of support",
+    "deprecat",
+    "no longer support"
+  ],
+  "feeds": [
+    {
+      "name": "Apple Developer News",
+      "platform": "darwin",
+      "url": "https://developer.apple.com/news/rss/news.rss"
+    },
+    {
+      "name": "Windows Blog",
+      "platform": "win32",
+      "url": "https://blogs.windows.com/feed/"
+    },
+    {
+      "name": "Windows Insider Blog",
+      "platform": "win32",
+      "url": "https://blogs.windows.com/windows-insider/feed/"
+    }
+  ]
+}

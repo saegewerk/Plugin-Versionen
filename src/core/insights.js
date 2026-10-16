@@ -56,7 +56,7 @@ function computeInsights(products, { platform, daws = [], updates = {} }) {
     if (sup.has(p.key)) add('superseded', p, `Nachfolger „${sup.get(p.key).name}“ ist installiert`, { successor: sup.get(p.key).key });
     const archs = p.archs || [];
     if (platform === 'darwin' && archs.length && archs.includes('x86_64') && !archs.includes('arm64')) {
-      add('intel', p, 'Nur für Intel: läuft auf Apple Silicon nur über Rosetta');
+      add('intel', p, 'Nur für Intel: läuft auf Apple Silicon nur über Rosetta, ab macOS 28 gar nicht mehr');
     }
     if (archs.some((a) => a === 'i386' || a === 'x86')) add('32bit', p, '32-Bit-Version: wird von aktuellen DAWs nicht mehr geladen');
     if (p.formats.includes('AAX') && daws.length && !hasProTools) {

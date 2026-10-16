@@ -1,0 +1,26 @@
+{
+  "format": 1,
+  "updated": "2026-10-16",
+  "notices": [
+    {
+      "id": "macos-28-rosetta-ende",
+      "platform": "darwin",
+      "affects": "intel",
+      "severity": "warn",
+      "title": "Rosetta 2 endet: Intel-Plugins laufen ab macOS 28 nicht mehr",
+      "text": "Apple hat angekündigt, dass macOS 27 die letzte Version ist, auf der Intel-Programme über Rosetta 2 allgemein laufen. Ab macOS 28 (erwartet im Herbst 2027) lassen sich reine Intel-Plugins nicht mehr laden. Seit macOS 26.4 kann macOS beim Start solcher Programme bereits warnen. Prüfe vor dem Update, ob es Apple-Silicon- oder Universal-Versionen gibt.",
+      "date": "2026-09-01",
+      "deadline": "macOS 28, Herbst 2027",
+      "url": "https://developer.apple.com/news/?id=w5ngl9k2"
+    },
+    {
+      "id": "windows-arm-x64-plugins",
+      "platform": "win32",
+      "affects": "x64-on-arm",
+      "severity": "info",
+      "title": "Windows auf ARM: x64-Plugins laden nicht in ARM-DAWs",
+      "text": "Dieser PC hat einen ARM-Prozessor. Eine DAW in der nativen ARM64-Version kann reine x64-Plugins nicht laden; dafür muss die x64-Version der DAW laufen (über Emulation, langsamer). Prüfe beim Hersteller, ob es ARM64- oder ARM64EC-Versionen gibt.",
+      "date": "2026-10-16"
+    }
+  ]
+}
