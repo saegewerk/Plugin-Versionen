@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "updated": "2026-10-16",
+  "updated": "2026-10-16T16:00",
   "notices": [
     {
       "id": "macos-28-rosetta-ende",
@@ -11,7 +11,8 @@
       "text": "Apple hat angekündigt, dass macOS 27 die letzte Version ist, auf der Intel-Programme über Rosetta 2 allgemein laufen. Ab macOS 28 (erwartet im Herbst 2027) lassen sich reine Intel-Plugins nicht mehr laden. Seit macOS 26.4 kann macOS beim Start solcher Programme bereits warnen. Prüfe vor dem Update, ob es Apple-Silicon- oder Universal-Versionen gibt.",
       "date": "2026-09-01",
       "deadline": "macOS 28, Herbst 2027",
-      "url": "https://developer.apple.com/news/?id=w5ngl9k2"
+      "url": "https://developer.apple.com/news/?id=w5ngl9k2",
+      "osBefore": "28"
     },
     {
       "id": "windows-arm-x64-plugins",

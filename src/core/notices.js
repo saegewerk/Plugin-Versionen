@@ -4,7 +4,9 @@
 // eine Kopie mit und zeigt nur Hinweise, die zum System passen und eigene Plugins betreffen.
 //
 // Format: { format: 1, updated, notices: [ { id, platform: 'darwin'|'win32', affects, severity: 'info'|'warn',
-//   title, text, date?, deadline?, until?, url? } ] }
+//   title, text, date?, deadline?, until?, url?, osBefore?, osFrom? } ] }
+// osBefore: '28' – nur zeigen, solange das System älter ist (nach dem Update verschwindet der Hinweis)
+// osFrom:   '27' – erst ab dieser Systemversion zeigen
 // affects: 'intel'      – macOS, Plugin hat nur Intel-Code (läuft nur über Rosetta)
 //          '32bit'      – Plugin hat nur 32-Bit-Code
 //          'x64-on-arm' – Windows auf ARM, Plugin hat keinen ARM64/ARM64EC-Code
@@ -20,6 +22,21 @@ function noticesUrlFor(versionDbUrl) {
   return versionDbUrl.replace(/versions\.json(\?.*)?$/i, 'notices.json');
 }
 
+// '26.1.0' -> [26, 1, 0]; Windows liefert z. B. '10.0.26100'
+const parts = (v) => String(v || '').split('.').map((x) => parseInt(x, 10) || 0);
+function cmpOs(a, b) {
+  const pa = parts(a); const pb = parts(b);
+  for (let i = 0; i < Math.max(pa.length, pb.length); i++) { const d = (pa[i] || 0) - (pb[i] || 0); if (d) return d; }
+  return 0;
+}
+// Ohne bekannte Systemversion lieber zeigen als verschweigen
+function osInRange(n, osVersion) {
+  if (!osVersion) return true;
+  if (n.osBefore && cmpOs(osVersion, n.osBefore) >= 0) return false;
+  if (n.osFrom && cmpOs(osVersion, n.osFrom) < 0) return false;
+  return true;
+}
+
 function valid(n) {
   return n && typeof n.id === 'string' && typeof n.title === 'string' && typeof n.text === 'string' && MATCHERS[n.affects] && ['darwin', 'win32'].includes(n.platform);
 }
@@ -28,7 +45,7 @@ function valid(n) {
 function applicable(list, products, { platform, host = {}, now = new Date(), dismissed = [] } = {}) {
   const off = new Set(dismissed);
   return (list || []).filter(valid)
-    .filter((n) => n.platform === platform && !off.has(n.id) && !(n.until && Date.parse(n.until) < now.getTime()))
+    .filter((n) => n.platform === platform && !off.has(n.id) && !(n.until && Date.parse(n.until) < now.getTime()) && osInRange(n, host.osVersion))
     .map((n) => {
       const affected = products.filter((p) => !p.isShell && MATCHERS[n.affects](p.archs || [], host));
       return { ...n, affected: affected.map((p) => p.key), affectedCount: affected.length };
@@ -42,4 +59,10 @@ function pick(bundled, remote) {
   return bundled || { format: 1, notices: [] };
 }
 
-module.exports = { applicable, noticesUrlFor, pick, MATCHERS };
+// Ausgeblendete Hinweise, die es nicht mehr gibt, aus den Einstellungen entfernen
+function pruneDismissed(dismissed, list) {
+  const ids = new Set((list || []).map((n) => n && n.id));
+  return (dismissed || []).filter((id) => ids.has(id));
+}
+
+module.exports = { applicable, noticesUrlFor, pick, pruneDismissed, cmpOs, osInRange, MATCHERS };

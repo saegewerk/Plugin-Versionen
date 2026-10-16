@@ -41,7 +41,9 @@ function supersededMap(products) {
   return out;
 }
 
-function computeInsights(products, { platform, daws = [], updates = {} }) {
+function computeInsights(products, { platform, daws = [], updates = {}, osVersion = null }) {
+  // Ab macOS 28 gibt es kein Rosetta 2 mehr für Programme: Intel-Plugins laden dann gar nicht
+  const noRosetta = platform === 'darwin' && osVersion && parseInt(osVersion, 10) >= 28;
   const warnings = [];
   const add = (type, p, text, extra = {}) => warnings.push({ type, key: p.key, name: p.name, vendor: p.vendor, text, ...extra });
   const dawFormats = new Set(daws.flatMap((d) => d.formats));
@@ -56,7 +58,7 @@ function computeInsights(products, { platform, daws = [], updates = {} }) {
     if (sup.has(p.key)) add('superseded', p, `Nachfolger „${sup.get(p.key).name}“ ist installiert`, { successor: sup.get(p.key).key });
     const archs = p.archs || [];
     if (platform === 'darwin' && archs.length && archs.includes('x86_64') && !archs.includes('arm64')) {
-      add('intel', p, 'Nur für Intel: läuft auf Apple Silicon nur über Rosetta, ab macOS 28 gar nicht mehr');
+      add('intel', p, noRosetta ? 'Nur für Intel: lädt auf diesem macOS nicht mehr (kein Rosetta 2)' : 'Nur für Intel: läuft auf Apple Silicon nur über Rosetta, ab macOS 28 gar nicht mehr');
     }
     if (archs.some((a) => a === 'i386' || a === 'x86')) add('32bit', p, '32-Bit-Version: wird von aktuellen DAWs nicht mehr geladen');
     if (p.formats.includes('AAX') && daws.length && !hasProTools) {
