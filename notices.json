@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "updated": "2026-10-16T16:00",
+  "updated": "2026-10-17T18:00",
   "notices": [
     {
       "id": "macos-28-rosetta-ende",
@@ -12,7 +12,29 @@
       "date": "2026-09-01",
       "deadline": "macOS 28, Herbst 2027",
       "url": "https://developer.apple.com/news/?id=w5ngl9k2",
-      "osBefore": "28"
+      "osBefore": "28",
+      "i18n": {
+        "en": {
+          "title": "Rosetta 2 is ending: Intel plugins will stop working from macOS 28",
+          "text": "Apple has announced that macOS 27 is the last version on which Intel apps generally run through Rosetta 2. From macOS 28 (expected in autumn 2027), Intel-only plugins can no longer be loaded. Since macOS 26.4, macOS may already show a warning when such programs start. Before you update, check whether Apple Silicon or Universal versions are available.",
+          "deadline": "macOS 28, autumn 2027"
+        },
+        "fr": {
+          "title": "Fin de Rosetta 2 : les plug-ins Intel ne fonctionneront plus à partir de macOS 28",
+          "text": "Apple a annoncé que macOS 27 est la dernière version sur laquelle les programmes Intel fonctionnent de manière générale via Rosetta 2. À partir de macOS 28 (prévu à l’automne 2027), les plug-ins uniquement Intel ne pourront plus être chargés. Depuis macOS 26.4, macOS peut déjà afficher un avertissement au lancement de ces programmes. Avant la mise à jour, vérifiez s’il existe des versions Apple Silicon ou Universal.",
+          "deadline": "macOS 28, automne 2027"
+        },
+        "it": {
+          "title": "Rosetta 2 sta per finire: i plug-in Intel non funzioneranno più da macOS 28",
+          "text": "Apple ha annunciato che macOS 27 è l’ultima versione su cui i programmi Intel funzionano in generale tramite Rosetta 2. Da macOS 28 (previsto per l’autunno 2027) i plug-in solo Intel non potranno più essere caricati. Da macOS 26.4 macOS può già mostrare un avviso all’avvio di questi programmi. Prima dell’aggiornamento controlla se esistono versioni Apple Silicon o Universal.",
+          "deadline": "macOS 28, autunno 2027"
+        },
+        "es": {
+          "title": "Rosetta 2 termina: los plugins Intel dejarán de funcionar a partir de macOS 28",
+          "text": "Apple ha anunciado que macOS 27 es la última versión en la que los programas Intel funcionan en general mediante Rosetta 2. A partir de macOS 28 (previsto para otoño de 2027) ya no se podrán cargar plugins solo para Intel. Desde macOS 26.4, macOS puede mostrar un aviso al abrir estos programas. Antes de actualizar, comprueba si hay versiones Apple Silicon o Universal.",
+          "deadline": "macOS 28, otoño de 2027"
+        }
+      }
     },
     {
       "id": "windows-arm-x64-plugins",
@@ -21,7 +43,25 @@
       "severity": "info",
       "title": "Windows auf ARM: x64-Plugins laden nicht in ARM-DAWs",
       "text": "Dieser PC hat einen ARM-Prozessor. Eine DAW in der nativen ARM64-Version kann reine x64-Plugins nicht laden; dafür muss die x64-Version der DAW laufen (über Emulation, langsamer). Prüfe beim Hersteller, ob es ARM64- oder ARM64EC-Versionen gibt.",
-      "date": "2026-10-16"
+      "date": "2026-10-16",
+      "i18n": {
+        "en": {
+          "title": "Windows on ARM: x64 plugins do not load in ARM DAWs",
+          "text": "This PC has an ARM processor. A DAW in its native ARM64 version cannot load x64-only plugins; for those, the x64 version of the DAW must run (through emulation, which is slower). Check with the manufacturer whether ARM64 or ARM64EC versions are available."
+        },
+        "fr": {
+          "title": "Windows sur ARM : les plug-ins x64 ne se chargent pas dans les DAW ARM",
+          "text": "Ce PC possède un processeur ARM. Une DAW en version ARM64 native ne peut pas charger les plug-ins uniquement x64 ; il faut alors utiliser la version x64 de la DAW (par émulation, plus lente). Vérifiez auprès du fabricant s’il existe des versions ARM64 ou ARM64EC."
+        },
+        "it": {
+          "title": "Windows su ARM: i plug-in x64 non si caricano nelle DAW ARM",
+          "text": "Questo PC ha un processore ARM. Una DAW nella versione nativa ARM64 non può caricare plug-in solo x64; per questi deve funzionare la versione x64 della DAW (tramite emulazione, più lenta). Verifica presso il produttore se esistono versioni ARM64 o ARM64EC."
+        },
+        "es": {
+          "title": "Windows en ARM: los plugins x64 no se cargan en DAW ARM",
+          "text": "Este PC tiene un procesador ARM. Una DAW en su versión nativa ARM64 no puede cargar plugins solo x64; para ellos debe ejecutarse la versión x64 de la DAW (mediante emulación, más lenta). Consulta con el fabricante si hay versiones ARM64 o ARM64EC."
+        }
+      }
     }
   ]
 }
