@@ -1,6 +1,6 @@
 # Plugin-Versionen
 
-Offene Liste der neuesten Versionen von Audio-Plugins. Plugin Organizer liest sie unter
+Offene Liste der neuesten Versionen von Audio-Plugins. Saege Plugwerk liest sie unter
 `https://raw.githubusercontent.com/saegewerk/Plugin-Versionen/main/versions.json`.
 
 - `versions.json`: die Datenbank (`{ format, generated, plugins: [{ vendor, name, aliases?, latest, url, released, source }] }`)
@@ -11,7 +11,7 @@ Fällt eine Seite aus, bleibt der alte Wert. Liefert ein Muster plötzlich eine 
 
 ## Neue Version melden
 
-In Plugin Organizer auf „Neue Version melden“ klicken. Es öffnet sich ein vorausgefülltes Issue mit dem Label `version-meldung`.
+In Saege Plugwerk auf „Neue Version melden“ klicken. Es öffnet sich ein vorausgefülltes Issue mit dem Label `version-meldung`.
 Nach Prüfung das Label `bestätigt` setzen: Der nächste Lauf übernimmt die Version und schließt das Issue.
 
 ## Quelle ergänzen
@@ -31,7 +31,7 @@ Neue Quelle ausprobieren: Workflow „Quelle testen“ starten und die Adresse e
 
 ## Betriebssystem-Hinweise (notices.json)
 
-Plugin Organizer zeigt angekündigte Änderungen an macOS und Windows, die Plugins unbrauchbar machen können, zum Beispiel das Ende von Rosetta 2 mit macOS 28. Der Hinweis erscheint nur, wenn eigene Plugins betroffen sind, und nennt sie.
+Saege Plugwerk zeigt angekündigte Änderungen an macOS und Windows, die Plugins unbrauchbar machen können, zum Beispiel das Ende von Rosetta 2 mit macOS 28. Der Hinweis erscheint nur, wenn eigene Plugins betroffen sind, und nennt sie.
 
 Jeder Eintrag in `notices.json` hat:
 - `id`: eindeutig, ändert sich nie

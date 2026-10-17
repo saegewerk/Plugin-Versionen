@@ -52,7 +52,7 @@ function extractVersion(html, pattern) {
   return m ? m[1] : null;
 }
 
-async function fetchText(url, fetchImpl = globalThis.fetch, headers = { 'User-Agent': 'PluginOrganizer/0.5' }) {
+async function fetchText(url, fetchImpl = globalThis.fetch, headers = { 'User-Agent': 'SaegePlugwerk/0.6' }) {
   const ctl = new AbortController();
   const t = setTimeout(() => ctl.abort(), 15000);
   try {

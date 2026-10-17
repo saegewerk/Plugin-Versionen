@@ -144,7 +144,7 @@ function mergeReports(db, reports, now = new Date()) {
 function reportUrl(repo, { vendor, name, installed, latest, url }) {
   if (!/^[\w.-]+\/[\w.-]+$/.test(String(repo || ''))) return null;
   const body = [
-    'Neue Plugin-Version gemeldet aus Plugin Organizer.', '',
+    'Neue Plugin-Version gemeldet aus Saege Plugwerk.', '',
     `- Hersteller: ${vendor}`, `- Plugin: ${name}`, `- Neueste Version: ${latest}`,
     `- Installiert: ${installed || 'unbekannt'}`, `- Quelle: ${url || ''}`,
   ].join('\n');

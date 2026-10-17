@@ -22,7 +22,7 @@ jobs:
       - name: Labels anlegen
         env: { GH_TOKEN: '${{ github.token }}' }
         run: |
-          gh label create version-meldung --color 7c5cff --description "Neue Version aus Plugin Organizer gemeldet" --force
+          gh label create version-meldung --color 7c5cff --description "Neue Version aus Saege Plugwerk gemeldet" --force
           gh label create "bestätigt" --color 2ea043 --description "Geprüft, wird beim nächsten Lauf übernommen" --force
       - name: Bestätigte Meldungen holen
         env: { GH_TOKEN: '${{ github.token }}' }
