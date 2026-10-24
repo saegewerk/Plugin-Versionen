@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-10-13T11:17:24.430Z",
+  "generated": "2026-10-24T08:11:47.198Z",
   "plugins": [
     {
       "vendor": "Arturia",
@@ -345,9 +345,9 @@
     {
       "vendor": "TAL Software",
       "name": "TAL-U-NO-LX",
-      "latest": "5.1.2",
+      "latest": "5.1.5",
       "url": "https://tal-software.com/products/tal-u-no-lx",
-      "released": "2026-10-13",
+      "released": "2026-10-24",
       "source": "html"
     },
     {
