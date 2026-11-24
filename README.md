@@ -47,3 +47,7 @@ Jede Nacht durchsucht `tools/check-news.js` die Nachrichten von Apple und Micros
 ## Produktbilder
 
 `images.json` listet die Produktseite jedes Plugins beim Hersteller. Der nächtliche Lauf holt daraus das Vorschaubild (`og:image`) und trägt in `versions.json` nur den Link ein (`image`, dazu `page`). Die Bilder selbst liegen nicht in diesem Repo, sie bleiben beim Hersteller. Neue Plugins: Eintrag mit `vendor`, `name` (wie in `versions.json`) und `page` ergänzen.
+
+## Subwerk Audio
+
+Eigene Produkte melden ihre Version selbst: Jeder Homepage-Upload legt `<produkt-id>-version.json` neben die Downloads in `https://subwerk-audio.com/files/` (Inhalt z. B. `{"product":"plugwerk","name":"Plugwerk","vendor":"Subwerk Audio","version":"1.0.10","date":"2026-11-24"}`). Für jedes Produkt steht in `sources.json` ein Eintrag vom Typ `json` mit dieser Adresse und `"path": "version"`. Plugins heißen dort wie in der DAW: `SW <Name>`.

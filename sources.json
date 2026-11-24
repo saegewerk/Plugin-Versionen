@@ -263,5 +263,18 @@
         "pattern": "Latest version</div>\\s*<div[^>]*>\\s*(\\d+(?:\\.\\d+)+)"
       }
     ]
+  },
+  {
+    "vendor": "Subwerk Audio",
+    "type": "json",
+    "url": "https://subwerk-audio.com/files/plugwerk-version.json",
+    "path": "version",
+    "download": "https://subwerk-audio.com",
+    "products": [
+      {
+        "name": "Plugwerk",
+        "path": "version"
+      }
+    ]
   }
 ]
