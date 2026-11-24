@@ -43,3 +43,7 @@ Jeder Eintrag in `notices.json` hat:
 Nach jeder Änderung `updated` auf das heutige Datum setzen.
 
 Jede Nacht durchsucht `tools/check-news.js` die Nachrichten von Apple und Microsoft (`news-sources.json`) nach Stichwörtern wie Rosetta, 32 Bit oder ARM64. Neue Treffer werden Issues mit dem Label `os-news`. Nichts wird automatisch übernommen: Wer das Issue prüft, ergänzt bei Bedarf `notices.json` und schließt es.
+
+## Produktbilder
+
+`images.json` listet die Produktseite jedes Plugins beim Hersteller. Der nächtliche Lauf holt daraus das Vorschaubild (`og:image`) und trägt in `versions.json` nur den Link ein (`image`, dazu `page`). Die Bilder selbst liegen nicht in diesem Repo, sie bleiben beim Hersteller. Neue Plugins: Eintrag mit `vendor`, `name` (wie in `versions.json`) und `page` ergänzen.

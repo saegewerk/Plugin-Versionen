@@ -7,6 +7,7 @@
 const fs = require('fs');
 const path = require('path');
 const versiondb = require('../src/core/versiondb');
+const { applyImages } = require('./fetch-images');
 
 const root = path.join(__dirname, '..');
 const [srcFile = path.join(root, 'sources.json'), outFile = path.join(root, 'versions.json'), reportsFile] = process.argv.slice(2);
@@ -25,6 +26,8 @@ const [srcFile = path.join(root, 'sources.json'), outFile = path.join(root, 'ver
     for (const r of merged.applied) log.push({ vendor: r.vendor, name: r.name, status: `Meldung #${r.number} übernommen: ${r.latest}` });
     fs.writeFileSync(path.join(path.dirname(reportsFile), 'applied.json'), JSON.stringify(merged.applied.map((r) => r.number)));
   }
+  // Bild-Links aus images.json beibehalten, sonst sähe jeder Lauf eine Änderung
+  try { applyImages(db, JSON.parse(fs.readFileSync(path.join(root, 'images.json'), 'utf8'))); } catch { /* keine Bilder */ }
   // Nur schreiben, wenn sich Versionen geändert haben (sonst entsteht jede Nacht ein leerer Commit)
   const strip = (d) => JSON.stringify((d && d.plugins) || []);
   if (!previous || strip(previous) !== strip(db)) fs.writeFileSync(outFile, JSON.stringify(db, null, 2) + '\n');

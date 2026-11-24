@@ -28,6 +28,10 @@ jobs:
         env: { GH_TOKEN: '${{ github.token }}' }
         run: gh issue list --label "bestätigt" --label "version-meldung" --state open --json number,body --limit 200 > /tmp/reports.json
       - run: node tools/crawl-versions.js sources.json versions.json /tmp/reports.json
+      - name: Produktbilder holen
+        # Vorschaubild (og:image) jeder Produktseite aus images.json; nur der Link kommt in versions.json
+        continue-on-error: true
+        run: node tools/fetch-images.js images.json versions.json
       - name: Betriebssystem-News prüfen
         # Apple- und Microsoft-News nach Rosetta, 32 Bit, ARM usw. durchsuchen; neue Treffer werden Issues (Label os-news)
         continue-on-error: true
