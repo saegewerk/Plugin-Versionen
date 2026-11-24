@@ -284,7 +284,66 @@
     "vendor": "Subwerk Audio",
     "type": "json",
     "urls": [
-      "https://subwerk-audio.com/files/daw-timer/daw-timer-version.json",
+      "https://subwerk-audio.com/files/specgeek/specgeek-version.json",
+      "https://subwerk-audio.com/files/specgeek-version.json"
+    ],
+    "path": "version",
+    "download": "https://subwerk-audio.com",
+    "products": [
+      {
+        "name": "SW SpecGeek",
+        "path": "version",
+        "aliases": [
+          "SpecGeek",
+          "Subwerk SpecGeek"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "Subwerk Audio",
+    "type": "json",
+    "urls": [
+      "https://subwerk-audio.com/files/specgeek/specgeek-free-version.json",
+      "https://subwerk-audio.com/files/specgeek-free-version.json"
+    ],
+    "path": "version",
+    "download": "https://subwerk-audio.com",
+    "products": [
+      {
+        "name": "SW SpecGeek Free",
+        "path": "version",
+        "aliases": [
+          "SpecGeek Free"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "Subwerk Audio",
+    "type": "json",
+    "urls": [
+      "https://subwerk-audio.com/files/shootout/shootout-version.json",
+      "https://subwerk-audio.com/files/shootout-version.json"
+    ],
+    "path": "version",
+    "download": "https://subwerk-audio.com",
+    "products": [
+      {
+        "name": "SW Shootout",
+        "path": "version",
+        "aliases": [
+          "Shootout",
+          "Subwerk Shootout"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "Subwerk Audio",
+    "type": "json",
+    "urls": [
+      "https://subwerk-audio.com/files/DAW-timer/daw-timer-version.json",
       "https://subwerk-audio.com/files/daw-timer-version.json"
     ],
     "path": "version",
@@ -294,7 +353,8 @@
         "name": "SW DAW Timer",
         "path": "version",
         "aliases": [
-          "DAW Timer"
+          "DAW Timer",
+          "Subwerk DAW Timer"
         ]
       }
     ]
@@ -303,7 +363,7 @@
     "vendor": "Subwerk Audio",
     "type": "json",
     "urls": [
-      "https://subwerk-audio.com/files/daw-timer-free/daw-timer-free-version.json",
+      "https://subwerk-audio.com/files/DAW-timer/daw-timer-free-version.json",
       "https://subwerk-audio.com/files/daw-timer-free-version.json"
     ],
     "path": "version",
@@ -314,6 +374,182 @@
         "path": "version",
         "aliases": [
           "DAW Timer Free"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "Subwerk Audio",
+    "type": "json",
+    "urls": [
+      "https://subwerk-audio.com/files/gainstage-mate/gainstage-mate-version.json",
+      "https://subwerk-audio.com/files/gainstage-mate-version.json"
+    ],
+    "path": "version",
+    "download": "https://subwerk-audio.com",
+    "products": [
+      {
+        "name": "SW Gainstage Mate",
+        "path": "version",
+        "aliases": [
+          "Gainstage Mate",
+          "GainStage Mate"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "Subwerk Audio",
+    "type": "json",
+    "urls": [
+      "https://subwerk-audio.com/files/evenhit-drums/drumreaper-version.json",
+      "https://subwerk-audio.com/files/drumreaper-version.json"
+    ],
+    "path": "version",
+    "download": "https://subwerk-audio.com",
+    "products": [
+      {
+        "name": "SW DrumReaper",
+        "path": "version",
+        "aliases": [
+          "DrumReaper",
+          "Drum Reaper"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "Subwerk Audio",
+    "type": "json",
+    "urls": [
+      "https://subwerk-audio.com/files/phase%20align/phase-align-version.json",
+      "https://subwerk-audio.com/files/phase-align-version.json"
+    ],
+    "path": "version",
+    "download": "https://subwerk-audio.com",
+    "products": [
+      {
+        "name": "SW Phase Align",
+        "path": "version",
+        "aliases": [
+          "Phase Align"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "Subwerk Audio",
+    "type": "json",
+    "urls": [
+      "https://subwerk-audio.com/files/mix%20compare/mix-compare-version.json",
+      "https://subwerk-audio.com/files/mix-compare-version.json"
+    ],
+    "path": "version",
+    "download": "https://subwerk-audio.com",
+    "products": [
+      {
+        "name": "SW Mix Compare",
+        "path": "version",
+        "aliases": [
+          "Mix Compare",
+          "Subwerk Mix Compare"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "Subwerk Audio",
+    "type": "json",
+    "urls": [
+      "https://subwerk-audio.com/files/LUFS-matchmaker/lufs-matchmaker-version.json",
+      "https://subwerk-audio.com/files/lufs-matchmaker-version.json"
+    ],
+    "path": "version",
+    "download": "https://subwerk-audio.com",
+    "products": [
+      {
+        "name": "SW LUFS Matchmaker",
+        "path": "version",
+        "aliases": [
+          "LUFS Matchmaker"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "Subwerk Audio",
+    "type": "json",
+    "urls": [
+      "https://subwerk-audio.com/files/stereo-debunker/stereo-debunker-version.json",
+      "https://subwerk-audio.com/files/stereo-debunker-version.json"
+    ],
+    "path": "version",
+    "download": "https://subwerk-audio.com",
+    "products": [
+      {
+        "name": "Subwerk Stereo Debunker",
+        "path": "version",
+        "aliases": [
+          "Stereo Debunker"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "Subwerk Audio",
+    "type": "json",
+    "urls": [
+      "https://subwerk-audio.com/files/audio-preview/audio-preview-version.json",
+      "https://subwerk-audio.com/files/audio-preview-version.json"
+    ],
+    "path": "version",
+    "download": "https://subwerk-audio.com",
+    "products": [
+      {
+        "name": "Subwerk Audio Preview",
+        "path": "version",
+        "aliases": [
+          "Audio Preview"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "Subwerk Audio",
+    "type": "json",
+    "urls": [
+      "https://subwerk-audio.com/files/earbreak/earbreak-version.json",
+      "https://subwerk-audio.com/files/earbreak-version.json"
+    ],
+    "path": "version",
+    "download": "https://subwerk-audio.com",
+    "products": [
+      {
+        "name": "Subwerk Earbreak",
+        "path": "version",
+        "aliases": [
+          "Earbreak",
+          "SW Earbreak"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "Subwerk Audio",
+    "type": "json",
+    "urls": [
+      "https://subwerk-audio.com/files/plugin%20exposer/plugin-exposer-version.json",
+      "https://subwerk-audio.com/files/plugin-exposer-version.json"
+    ],
+    "path": "version",
+    "download": "https://subwerk-audio.com",
+    "products": [
+      {
+        "name": "Subwerk Plugin Exposer",
+        "path": "version",
+        "aliases": [
+          "Plugin Exposer",
+          "SW Plugin Exposer"
         ]
       }
     ]
