@@ -148,11 +148,35 @@ function mergeReports(db, reports, now = new Date()) {
   return { db: build([...map.values()], now), applied };
 }
 
+// Automatische Meldungen aus Plugwerk („Plugin-Liste mithelfen“), zusammengefasst von der Annahmestelle:
+// [{ vendor, name, url, versions: { "1.2.0": Anzahl Installationen, … } }]
+// Aufgenommen wird nur, was mindestens `min` verschiedene Installationen gemeldet haben; als Version gilt die
+// höchste, die so oft gemeldet wurde. Einträge aus echten Quellen (Crawler, Meldungen) haben Vorrang.
+function mergeContributions(db, list, { min = 2, now = new Date() } = {}) {
+  const map = new Map(((db && db.plugins) || []).map((e) => [keyOf(e), e]));
+  const applied = [];
+  const ok = (s, n) => typeof s === 'string' && s.trim() && s.length <= n && !/[\u0000-\u001f<>]/.test(s);
+  for (const c of Array.isArray(list) ? list : []) {
+    if (!c || !ok(c.vendor, 60) || !ok(c.name, 80) || /^unbekannt$/i.test(c.vendor)) continue;
+    const vs = Object.entries(c.versions || {}).filter(([v, n]) => cleanVersion(v) && Number(n) >= min).map(([v]) => cleanVersion(v));
+    if (!vs.length) continue;
+    const latest = vs.sort((a, b) => cmpVersion(b, a))[0];
+    const r = { vendor: c.vendor.trim(), name: c.name.trim() };
+    const prev = map.get(keyOf(r));
+    if (prev && prev.source !== 'nutzer') continue;
+    if (prev && cmpVersion(latest, prev.latest) <= 0) continue;
+    const url = typeof c.url === 'string' && /^https?:\/\/[^\s"<>]+$/i.test(c.url) && c.url.length <= 200 ? c.url : null;
+    map.set(keyOf(r), { ...r, latest, url: url || (prev && prev.url) || null, released: now.toISOString().slice(0, 10), source: 'nutzer' });
+    applied.push({ ...r, latest });
+  }
+  return { db: build([...map.values()], now), applied };
+}
+
 // Vorausgefülltes GitHub-Issue (kein Konto in der App nötig, der Browser übernimmt)
 function reportUrl(repo, { vendor, name, installed, latest, url }) {
   if (!/^[\w.-]+\/[\w.-]+$/.test(String(repo || ''))) return null;
   const body = [
-    'Neue Plugin-Version gemeldet aus Saege Plugwerk.', '',
+    'Neue Plugin-Version gemeldet aus Plugwerk.', '',
     `- Hersteller: ${vendor}`, `- Plugin: ${name}`, `- Neueste Version: ${latest}`,
     `- Installiert: ${installed || 'unbekannt'}`, `- Quelle: ${url || ''}`,
   ].join('\n');
@@ -167,4 +191,4 @@ function exportFeed(products, updates) {
   return build(plugins);
 }
 
-module.exports = { FORMAT, cleanVersion, normalize, jsonPath, sparkleVersion, readSource, crawl, parseReport, mergeReports, reportUrl, exportFeed, build };
+module.exports = { FORMAT, cleanVersion, normalize, jsonPath, sparkleVersion, readSource, crawl, parseReport, mergeReports, mergeContributions, reportUrl, exportFeed, build };

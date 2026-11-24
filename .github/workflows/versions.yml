@@ -27,7 +27,11 @@ jobs:
       - name: Bestätigte Meldungen holen
         env: { GH_TOKEN: '${{ github.token }}' }
         run: gh issue list --label "bestätigt" --label "version-meldung" --state open --json number,body --limit 200 > /tmp/reports.json
-      - run: node tools/crawl-versions.js sources.json versions.json /tmp/reports.json
+      - name: Meldungen aus Plugwerk holen
+        # Annahmestelle auf subwerk-audio.com: Plugins, die mindestens zwei Installationen gemeldet haben
+        continue-on-error: true
+        run: curl -fsS --max-time 30 https://subwerk-audio.com/wp-json/subwerk/v1/plugin-meldungen/liste -o /tmp/contrib.json || rm -f /tmp/contrib.json
+      - run: node tools/crawl-versions.js sources.json versions.json /tmp/reports.json /tmp/contrib.json
       - name: Produktbilder holen
         # Vorschaubild (og:image) jeder Produktseite aus images.json; nur der Link kommt in versions.json
         continue-on-error: true

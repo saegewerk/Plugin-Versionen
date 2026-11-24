@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 // Erzeugt die gemeinsame Versions-Datenbank.
-// Aufruf: node tools/crawl-versions.js [quellen.json] [ausgabe.json] [meldungen.json]
+// Aufruf: node tools/crawl-versions.js [quellen.json] [ausgabe.json] [meldungen.json] [nutzer-meldungen.json]
 // Läuft nächtlich per GitHub Actions (.github/workflows/versions.yml), geht aber auch lokal.
 
 const fs = require('fs');
@@ -10,7 +10,7 @@ const versiondb = require('../src/core/versiondb');
 const { applyImages } = require('./fetch-images');
 
 const root = path.join(__dirname, '..');
-const [srcFile = path.join(root, 'sources.json'), outFile = path.join(root, 'versions.json'), reportsFile] = process.argv.slice(2);
+const [srcFile = path.join(root, 'sources.json'), outFile = path.join(root, 'versions.json'), reportsFile, contribFile] = process.argv.slice(2);
 
 (async () => {
   const sources = JSON.parse(fs.readFileSync(srcFile, 'utf8'));
@@ -25,6 +25,15 @@ const [srcFile = path.join(root, 'sources.json'), outFile = path.join(root, 'ver
     db = merged.db;
     for (const r of merged.applied) log.push({ vendor: r.vendor, name: r.name, status: `Meldung #${r.number} übernommen: ${r.latest}` });
     fs.writeFileSync(path.join(path.dirname(reportsFile), 'applied.json'), JSON.stringify(merged.applied.map((r) => r.number)));
+  }
+  if (contribFile && fs.existsSync(contribFile)) {
+    // Automatische Meldungen aus Plugwerk, von der Annahmestelle zusammengefasst: { plugins: [{ vendor, name, url, versions }] }
+    try {
+      const c = JSON.parse(fs.readFileSync(contribFile, 'utf8'));
+      const merged = versiondb.mergeContributions(db, c.plugins || []);
+      db = merged.db;
+      for (const r of merged.applied) log.push({ vendor: r.vendor, name: r.name, status: `von Nutzern gemeldet: ${r.latest}` });
+    } catch (e) { log.push({ vendor: 'Nutzer-Meldungen', status: 'fehler', error: e.message }); }
   }
   // Bild-Links aus images.json beibehalten, sonst sähe jeder Lauf eine Änderung
   try { applyImages(db, JSON.parse(fs.readFileSync(path.join(root, 'images.json'), 'utf8'))); } catch { /* keine Bilder */ }

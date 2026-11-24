@@ -59,6 +59,51 @@ function applyImages(db, images) {
   return db;
 }
 
+// Für Plugins, die Plugwerk-Nutzer gemeldet haben (source "nutzer"), ist oft nur die Hersteller-Webseite bekannt.
+// Dort wird ein Link gesucht, dessen Text oder Adresse den Plugin-Namen enthält; die Seite kommt als Produktseite
+// in images.json („auto“). Ist die gemeldete Adresse selbst schon eine Unterseite, gilt sie als Produktseite.
+const slug = (s) => String(s).toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '');
+
+function findProductLink(html, baseUrl, name) {
+  const want = slug(name);
+  if (want.length < 3) return null;
+  const base = new URL(baseUrl);
+  const host = base.hostname.replace(/^www\./, '');
+  let best = null;
+  for (const m of html.matchAll(/<a\b[^>]*\bhref\s*=\s*["']([^"'#]+)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
+    let u;
+    try { u = new URL(decode(m[1]), base); } catch { continue; }
+    if (!/^https?:$/.test(u.protocol) || !u.hostname.replace(/^www\./, '').endsWith(host)) continue;
+    const text = slug(m[2].replace(/<[^>]+>/g, ' '));
+    const path = slug(u.pathname);
+    const s = text === want ? 3 : path.endsWith(want) ? 2 : (text.includes(want) || path.includes(want)) ? 1 : 0;
+    if (s && (!best || s > best.s)) best = { s, url: u.origin + u.pathname };
+  }
+  return best && best.url;
+}
+
+async function discoverPages(images, db, { fetchImpl, now = Date.now(), log = console.log, limit = 50 } = {}) {
+  images.plugins = images.plugins || [];
+  const have = new Map(images.plugins.map((e) => [key(e.vendor, e.name), e]));
+  let changed = false;
+  let n = 0;
+  for (const p of (db && db.plugins) || []) {
+    if (p.source !== 'nutzer' || !p.url || n >= limit) continue;
+    const old = have.get(key(p.vendor, p.name));
+    if (old && (old.page || !old.auto || (old.checked && now - Date.parse(old.checked) < MAX_AGE))) continue;
+    n++;
+    const e = old || { vendor: p.vendor, name: p.name, auto: true };
+    try {
+      const u = new URL(p.url);
+      const page = u.pathname.length > 1 ? u.origin + u.pathname : findProductLink(await fetchPage(p.url, fetchImpl), p.url, p.name);
+      if (page) { e.page = page; delete e.error; log(`Produktseite  ${p.vendor} ${p.name} ${page}`); } else { e.page = null; e.error = 'keine Produktseite gefunden'; e.checked = new Date(now).toISOString(); log(`keine Seite   ${p.vendor} ${p.name}`); }
+    } catch (err) { e.page = null; e.error = err.message; e.checked = new Date(now).toISOString(); log(`fehler        ${p.vendor} ${p.name} ${err.message}`); }
+    if (!old) { images.plugins.push(e); have.set(key(p.vendor, p.name), e); }
+    changed = true;
+  }
+  return changed;
+}
+
 async function refresh(images, { fetchImpl, now = Date.now(), log = console.log } = {}) {
   let changed = false;
   for (const e of images.plugins || []) {
@@ -83,8 +128,9 @@ if (require.main === module) {
   const [imgFile = path.join(root, 'images.json'), dbFile = path.join(root, 'versions.json')] = process.argv.slice(2);
   (async () => {
     const images = JSON.parse(fs.readFileSync(imgFile, 'utf8'));
-    if (await refresh(images)) fs.writeFileSync(imgFile, JSON.stringify(images, null, 2) + '\n');
     const db = JSON.parse(fs.readFileSync(dbFile, 'utf8'));
+    const found = await discoverPages(images, db);
+    if (await refresh(images) || found) fs.writeFileSync(imgFile, JSON.stringify(images, null, 2) + '\n');
     const before = JSON.stringify(db.plugins);
     applyImages(db, images);
     if (JSON.stringify(db.plugins) !== before) fs.writeFileSync(dbFile, JSON.stringify(db, null, 2) + '\n');
@@ -93,4 +139,4 @@ if (require.main === module) {
   })().catch((e) => { console.error(e); process.exit(1); });
 }
 
-module.exports = { findImage, applyImages, refresh };
+module.exports = { findImage, applyImages, refresh, discoverPages, findProductLink };
