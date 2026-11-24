@@ -58,6 +58,14 @@ function sparkleVersion(xml) {
 
 // Liefert für eine Quelle die Versionen ihrer Produkte: [{ name, latest }]
 async function readSource(src, fetchImpl, opts = {}) {
+  // Mehrere mögliche Adressen (z. B. Subwerk-Versionsdateien mit oder ohne Produktordner): die erste, die antwortet, gilt
+  if (Array.isArray(src.urls) && src.urls.length) {
+    let last;
+    for (const url of src.urls) {
+      try { return await readSource({ ...src, urls: undefined, url }, fetchImpl, opts); } catch (e) { last = e; }
+    }
+    throw last;
+  }
   const products = src.products || [{ name: src.name, pattern: src.pattern, path: src.path }];
   const type = src.type || 'html';
   if (type === 'github') {

@@ -267,13 +267,54 @@
   {
     "vendor": "Subwerk Audio",
     "type": "json",
-    "url": "https://subwerk-audio.com/files/plugwerk-version.json",
     "path": "version",
     "download": "https://subwerk-audio.com",
     "products": [
       {
         "name": "Plugwerk",
         "path": "version"
+      }
+    ],
+    "urls": [
+      "https://subwerk-audio.com/files/plugwerk/plugwerk-version.json",
+      "https://subwerk-audio.com/files/plugwerk-version.json"
+    ]
+  },
+  {
+    "vendor": "Subwerk Audio",
+    "type": "json",
+    "urls": [
+      "https://subwerk-audio.com/files/daw-timer/daw-timer-version.json",
+      "https://subwerk-audio.com/files/daw-timer-version.json"
+    ],
+    "path": "version",
+    "download": "https://subwerk-audio.com",
+    "products": [
+      {
+        "name": "SW DAW Timer",
+        "path": "version",
+        "aliases": [
+          "DAW Timer"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "Subwerk Audio",
+    "type": "json",
+    "urls": [
+      "https://subwerk-audio.com/files/daw-timer-free/daw-timer-free-version.json",
+      "https://subwerk-audio.com/files/daw-timer-free-version.json"
+    ],
+    "path": "version",
+    "download": "https://subwerk-audio.com",
+    "products": [
+      {
+        "name": "SW DAW Timer Free",
+        "path": "version",
+        "aliases": [
+          "DAW Timer Free"
+        ]
       }
     ]
   }

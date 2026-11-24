@@ -109,7 +109,15 @@ test('Mitgelieferte Datenbank ist gültig', () => {
   }
   const sources = require('../sources.json');
   for (const s of sources) {
-    assert.ok(s.vendor && /^https:\/\//.test(s.url), JSON.stringify(s));
+    const urls = s.urls || [s.url];
+    assert.ok(s.vendor && urls.length && urls.every((u) => /^https:\/\//.test(u)), JSON.stringify(s));
     for (const p of s.products || [s]) if (p.pattern) new RegExp(p.pattern, 'i');
   }
+});
+
+test('mehrere Adressen: die erste, die antwortet, gilt', async () => {
+  const { readSource } = require('../src/core/versiondb');
+  const fetchImpl = async (u) => (u.includes('/ordner/') ? { ok: false, status: 404, text: async () => '' } : { ok: true, status: 200, text: async () => '{"version":"1.2.3"}' });
+  const got = await readSource({ type: 'json', urls: ['https://x/ordner/a.json', 'https://x/a.json'], path: 'version', products: [{ name: 'SW A', path: 'version' }] }, fetchImpl, { retryDelay: 0 });
+  assert.deepStrictEqual(got, [{ name: 'SW A', latest: '1.2.3' }]);
 });
