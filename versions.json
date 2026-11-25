@@ -8,7 +8,9 @@
       "latest": "7.0.1.6772",
       "url": "https://www.kvraudio.com/product/pigments-by-arturia",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://medias.arturia.net/images/products/pigments/catalog-image.png",
+      "page": "https://www.arturia.com/products/software-instruments/pigments/overview"
     },
     {
       "vendor": "Audio Damage",
@@ -179,7 +181,9 @@
       "latest": "5.2.0",
       "url": "https://www.kvraudio.com/product/neutron-by-izotope",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://izotope.com/cdn/shop/files/neutron-5-featured-image_7caad8ff-c845-4fdb-a0eb-b11652df4bd2.png?v=1794948916",
+      "page": "https://www.izotope.com/en/products/neutron.html"
     },
     {
       "vendor": "iZotope",
@@ -190,7 +194,9 @@
       "latest": "12.1.0",
       "url": "https://www.kvraudio.com/product/ozone-12-advanced-by-izotope",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://izotope.com/cdn/shop/files/ozone-12-advanced-featured-image_20d94cc3-bbcd-4805-b72e-b6e814c35a9b.png?v=1794948919",
+      "page": "https://www.izotope.com/en/products/ozone.html"
     },
     {
       "vendor": "iZotope",
@@ -201,7 +207,9 @@
       "latest": "12.0.0",
       "url": "https://www.kvraudio.com/product/rx-12-advanced-by-izotope",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://izotope.com/cdn/shop/files/rx-12-advanced-featured-image_44b7ae2d-0483-499f-9dd4-b4deaef10386.png?v=1794948921",
+      "page": "https://www.izotope.com/en/products/rx.html"
     },
     {
       "vendor": "Kilohearts",
@@ -209,7 +217,9 @@
       "latest": "2.4.6",
       "url": "https://www.kvraudio.com/product/phase-plant-by-kilohearts",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://kilohearts.com/resources/media_dynamic/offers/phase_plant/social.png",
+      "page": "https://kilohearts.com/products/phase_plant"
     },
     {
       "vendor": "Klevgrand",
@@ -217,7 +227,9 @@
       "latest": "1.2.3",
       "url": "https://www.kvraudio.com/product/daw-cassette-by-klevgrand",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://cdn.klevgrand.com/assets/ui_images/dawcassette2x.jpg",
+      "page": "https://www.klevgrand.com/products/dawcassette"
     },
     {
       "vendor": "Klevgrand",
@@ -225,7 +237,9 @@
       "latest": "2.1.2",
       "url": "https://www.klevgrand.com/products/korvpressor",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://cdn.klevgrand.com/assets/ui_images/ui_korvpressor@2x.jpg",
+      "page": "https://www.klevgrand.com/products/korvpressor"
     },
     {
       "vendor": "Kush Audio",
@@ -233,7 +247,9 @@
       "latest": "1.0.3",
       "url": "https://www.kvraudio.com/product/ubk-2-by-kush-audio",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://cdn.shopify.com/s/files/1/2162/2685/files/STORE_-_FOR_CART-CHECKOUT_-_UBK-2.png?v=1724720462",
+      "page": "https://www.thehouseofkush.com/products/ubk-2"
     },
     {
       "vendor": "Native Instruments",
@@ -241,7 +257,9 @@
       "latest": "8.13.1",
       "url": "https://www.kvraudio.com/product/kontakt-by-native-instruments",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://www.native-instruments.com/cdn/shop/files/3f46afbc4379-kontakt-8-featured-image_d282d0fd-53a2-47f0-89d1-3887e1c94779.png?v=1779821065",
+      "page": "https://www.native-instruments.com/en/products/komplete/samplers/kontakt-8/"
     },
     {
       "vendor": "Native Instruments",
@@ -249,7 +267,9 @@
       "latest": "1.7.1",
       "url": "https://www.kvraudio.com/product/massive-x-by-native-instruments",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://www.native-instruments.com/cdn/shop/files/Massive-XL-featured-image.png?v=1792584824",
+      "page": "https://www.native-instruments.com/en/products/komplete/synths/massive-x/"
     },
     {
       "vendor": "oeksound",
@@ -265,7 +285,9 @@
       "latest": "1.0.6",
       "url": "https://oeksound.com/plugins/soothe3/",
       "released": "2026-11-11",
-      "source": "html"
+      "source": "html",
+      "image": "https://oeksound.com/_astro/og-image-soothe3.DfkQ5UO5.jpg",
+      "page": "https://oeksound.com/plugins/soothe3/"
     },
     {
       "vendor": "Output",
@@ -273,7 +295,9 @@
       "latest": "2.16.1",
       "url": "https://www.kvraudio.com/product/arcade-by-output",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://storyblok-assets.output.com/1200x675/a3f7167573/seo_arcade_1200x675.jpg",
+      "page": "https://output.com/products/arcade"
     },
     {
       "vendor": "Output",
@@ -281,7 +305,9 @@
       "latest": "1.3.0",
       "url": "https://www.kvraudio.com/product/portal-by-output",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://storyblok-assets.output.com/1200x675/c0c15baf8b/seo_-fx-portal_1200x675.jpg",
+      "page": "https://output.com/products/portal"
     },
     {
       "vendor": "Plugin Alliance",
@@ -289,7 +315,9 @@
       "latest": "1.8.0",
       "url": "https://www.kvraudio.com/product/brainworx-bx_console-ssl-4000-e-by-plugin-alliance",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://www.plugin-alliance.com/cdn/shop/files/productimage-300373_f5942771-0897-4d7f-8955-7795f96295a3.png?v=1745913955",
+      "page": "https://www.plugin-alliance.com/en/products/bx_console_ssl_4000_e.html"
     },
     {
       "vendor": "Softube",
@@ -297,7 +325,9 @@
       "latest": "2.6.41",
       "url": "https://www.kvraudio.com/product/tape-by-softube",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://cdn.softube.com/storage/84A65C0D4CD88EE9EE3D88A8A17367D66234AF47E18A2B18E91A5B80089ADA01/1a397c0394f04c1a9b01a271bbcaa260/jpg/media/a545cb9993064d0ca2b7db0dc75f880b/bf-26-tape-thumbnail-1200x1200.jpg",
+      "page": "https://www.softube.com/plug-ins/tape"
     },
     {
       "vendor": "Sonible",
@@ -305,7 +335,9 @@
       "latest": "1.1.1",
       "url": "https://www.sonible.com/smarteq4/",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://www.sonible.com/app/uploads/2026/10/smartEQ4_product-image.png",
+      "page": "https://www.sonible.com/smarteq4/"
     },
     {
       "vendor": "Soundtoys",
@@ -316,7 +348,9 @@
       "latest": "5.5.5.19885",
       "url": "https://www.kvraudio.com/product/soundtoys-5-5-by-soundtoys",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://www.soundtoys.com/wp-content/uploads/SoundToys.com_homepage_hero_updated.jpg",
+      "page": "https://www.soundtoys.com/product/soundtoys-5/"
     },
     {
       "vendor": "Spitfire Audio",
@@ -324,7 +358,9 @@
       "latest": "3.7.29",
       "url": "https://www.kvraudio.com/product/labs-by-spitfire-audio",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://res.cloudinary.com/splice/image/upload/f_auto,q_auto/v1/app-assets/general/og-image",
+      "page": "https://labs.spitfireaudio.com/"
     },
     {
       "vendor": "Surge Synth Team",
@@ -332,7 +368,9 @@
       "latest": "1.3.4",
       "url": "https://surge-synthesizer.github.io/",
       "released": null,
-      "source": "github"
+      "source": "github",
+      "image": "https://surge-synthesizer.github.io/images/og_image.png",
+      "page": "https://surge-synthesizer.github.io/"
     },
     {
       "vendor": "TAL Software",
@@ -340,7 +378,9 @@
       "latest": "4.9.5",
       "url": "https://tal-software.com/products/tal-sampler",
       "released": "2026-10-13",
-      "source": "html"
+      "source": "html",
+      "image": "https://tal-software.com/images/products/tal-sampler-02.jpg",
+      "page": "https://tal-software.com/products/tal-sampler"
     },
     {
       "vendor": "TAL Software",
@@ -348,7 +388,9 @@
       "latest": "5.1.5",
       "url": "https://tal-software.com/products/tal-u-no-lx",
       "released": "2026-10-24",
-      "source": "html"
+      "source": "html",
+      "image": "https://tal-software.com/images/products/tal-u-no-lx-03.jpg",
+      "page": "https://tal-software.com/products/tal-u-no-lx"
     },
     {
       "vendor": "Tokyo Dawn Records",
@@ -356,7 +398,9 @@
       "latest": "1.6.7",
       "url": "https://www.tokyodawn.net/tdr-kotelnikov/",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://www.tokyodawn.net/wp-content/uploads/2018/06/KotelnikovMain2.png",
+      "page": "https://www.tokyodawn.net/tdr-kotelnikov/"
     },
     {
       "vendor": "Tokyo Dawn Records",
@@ -364,7 +408,9 @@
       "latest": "1.6.5",
       "url": "https://www.tokyodawn.net/tdr-kotelnikov-ge/",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://www.tokyodawn.net/wp-content/uploads/2018/06/KotelnikovGEMain2.png",
+      "page": "https://www.tokyodawn.net/tdr-kotelnikov-ge/"
     },
     {
       "vendor": "Tokyo Dawn Records",
@@ -372,7 +418,9 @@
       "latest": "2.2.3",
       "url": "https://www.tokyodawn.net/tdr-nova/",
       "released": "2026-10-13",
-      "source": "html"
+      "source": "html",
+      "image": "https://www.tokyodawn.net/wp-content/uploads/2018/11/Seite-1-1.png",
+      "page": "https://www.tokyodawn.net/tdr-nova/"
     },
     {
       "vendor": "Tokyo Dawn Records",
@@ -380,7 +428,9 @@
       "latest": "1.3.9",
       "url": "https://www.tokyodawn.net/tdr-vos-slickeq/",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://www.tokyodawn.net/wp-content/uploads/2014/03/TDR-SlickEQ-main-flat.png",
+      "page": "https://www.tokyodawn.net/tdr-vos-slickeq/"
     },
     {
       "vendor": "Toontrack",
@@ -388,7 +438,9 @@
       "latest": "3.1.2",
       "url": "https://www.kvraudio.com/product/ezdrummer-3-by-toontrack-music",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://www.toontrack.com/app/uploads/product/ezdrummer-3/jpg/TT528_EZdrummer3_OG-image.jpg",
+      "page": "https://www.toontrack.com/product/ezdrummer-3/"
     },
     {
       "vendor": "u-he",
@@ -396,7 +448,9 @@
       "latest": "1.4.3",
       "url": "https://u-he.com/products/",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://u-he.com/products/ace/assets/images/uhe-ace-splash-photo-studio-setup-1100x350.jpg",
+      "page": "https://u-he.com/products/ace/"
     },
     {
       "vendor": "u-he",
@@ -404,7 +458,9 @@
       "latest": "1.1.3",
       "url": "https://u-he.com/products/",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://u-he.com/products/bazille/assets/images/uhe-bazille-splash-photo-studio-setup-1100x350.jpg",
+      "page": "https://u-he.com/products/bazille/"
     },
     {
       "vendor": "u-he",
@@ -412,7 +468,9 @@
       "latest": "1.4.8",
       "url": "https://u-he.com/products/",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://u-he.com/products/diva/assets/images/uhe-diva-splash-photo-studio-setup-1100x350.jpg",
+      "page": "https://u-he.com/products/diva/"
     },
     {
       "vendor": "u-he",
@@ -420,7 +478,9 @@
       "latest": "2.1.2",
       "url": "https://u-he.com/products/",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://u-he.com/products/hive/assets/images/uhe-hive-splash-photo-studio-setup-1100x350.jpg",
+      "page": "https://u-he.com/products/hive/"
     },
     {
       "vendor": "u-he",
@@ -428,7 +488,9 @@
       "latest": "1.1.6",
       "url": "https://u-he.com/products/",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://u-he.com/products/presswerk/assets/images/uhe-presswerk-splash-photo-studio-setup-1100x350.jpg",
+      "page": "https://u-he.com/products/presswerk/"
     },
     {
       "vendor": "u-he",
@@ -436,7 +498,9 @@
       "latest": "1.1.3",
       "url": "https://u-he.com/products/",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://u-he.com/products/repro/assets/images/uhe-repro-splash-photo-studio-setup-1100x350.jpg",
+      "page": "https://u-he.com/products/repro/"
     },
     {
       "vendor": "u-he",
@@ -444,7 +508,9 @@
       "latest": "1.3.3",
       "url": "https://u-he.com/products/",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://u-he.com/products/satin/assets/images/uhe-satin-splash-photo-studio-setup-1100x350.jpg",
+      "page": "https://u-he.com/products/satin/"
     },
     {
       "vendor": "u-he",
@@ -463,7 +529,9 @@
       "latest": "1.0.3",
       "url": "https://www.kvraudio.com/product/uadx-1176-fet-compressor-by-universal-audio",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://www.uaudio.com/cdn/shop/files/1176_classic_limiter_collection_gallery_1.png?crop=center&height=480&v=1742502468&width=480",
+      "page": "https://www.uaudio.com/products/1176-collection"
     },
     {
       "vendor": "Valhalla DSP",
@@ -479,7 +547,9 @@
       "latest": "1.6.8",
       "url": "https://valhalladsp.com/shop/reverb/valhalla-plate/",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://val-media-offload.s3.amazonaws.com/wp-content/uploads/2020/06/08074549/plate_1300x540.jpg",
+      "page": "https://valhalladsp.com/shop/reverb/valhalla-plate/"
     },
     {
       "vendor": "Valhalla DSP",
@@ -487,7 +557,9 @@
       "latest": "2.0.5",
       "url": "https://valhalladsp.com/shop/reverb/valhalla-room/",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://val-media-offload.s3.amazonaws.com/wp-content/uploads/2020/06/08074600/room_1300x540.jpg",
+      "page": "https://valhalladsp.com/shop/reverb/valhalla-room/"
     },
     {
       "vendor": "Valhalla DSP",
@@ -495,7 +567,9 @@
       "latest": "1.3.0",
       "url": "https://valhalladsp.com/shop/reverb/valhalla-shimmer/",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://val-media-offload.s3.amazonaws.com/wp-content/uploads/2020/06/08074541/shimmer_21300x540.jpg",
+      "page": "https://valhalladsp.com/shop/reverb/valhalla-shimmer/"
     },
     {
       "vendor": "Valhalla DSP",
@@ -503,7 +577,9 @@
       "latest": "5.0.0",
       "url": "https://valhalladsp.com/shop/reverb/valhalla-supermassive/",
       "released": null,
-      "source": "html"
+      "source": "html",
+      "image": "https://valhalladsp.com/wp-content/uploads/2020/05/Supermassive_Aura_1300x540.png",
+      "page": "https://valhalladsp.com/shop/reverb/valhalla-supermassive/"
     },
     {
       "vendor": "Valhalla DSP",
@@ -511,7 +587,9 @@
       "latest": "4.0.5",
       "url": "https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://val-media-offload.s3.amazonaws.com/wp-content/uploads/2020/06/08074610/vintage-verb_1300x540.jpg",
+      "page": "https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/"
     },
     {
       "vendor": "Vital Audio",
@@ -519,7 +597,9 @@
       "latest": "1.6.4",
       "url": "https://www.kvraudio.com/product/vital-by-matt-tytel",
       "released": null,
-      "source": "recherche"
+      "source": "recherche",
+      "image": "https://vital.audio/images/social.png",
+      "page": "https://vital.audio/"
     },
     {
       "vendor": "Xfer Records",
