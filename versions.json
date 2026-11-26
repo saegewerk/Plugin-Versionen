@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-11-11T11:02:38.056Z",
+  "generated": "2026-11-26T12:41:32.564Z",
   "plugins": [
     {
       "vendor": "Arturia",
@@ -361,6 +361,14 @@
       "source": "recherche",
       "image": "https://res.cloudinary.com/splice/image/upload/f_auto,q_auto/v1/app-assets/general/og-image",
       "page": "https://labs.spitfireaudio.com/"
+    },
+    {
+      "vendor": "Subwerk Audio",
+      "name": "Plugwerk",
+      "latest": "1.2.0",
+      "url": "https://subwerk-audio.com",
+      "released": "2026-11-26",
+      "source": "json"
     },
     {
       "vendor": "Surge Synth Team",
